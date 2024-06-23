@@ -38,7 +38,7 @@ staffOne = \relative c' {
   \repeat volta 2 {
   \once \override Score.RehearsalMark.self-alignment-X = #CENTER
   \mark \default
-  r8 d8 d8 d8 d4 c16 b8. |
+  r8 d'8 d8 d8 d4 c16 b8. |
   r8 d8 d8 d8 d4 c16( b8.) |
   r8 d8 d8 d8 d4 c8( b8) |
   r8 d8 d8 d8 d4 c8( b8) |
@@ -54,7 +54,7 @@ staffOne = \relative c' {
   \markMojCenter d4 r4 r2 |
   r8 f8 f8 f8 f8. d16 ~ d8 d8 (~|
   d16 c16 b4.) r2 |
-  r8 f'8 f8 f8 f8. d16 ~d8 d8 ~|
+  r8 f'8 f8 f8 f8. d16 ~d8 d8 ~| \pageBreak
   d2 r2 |
   r8 f8 f8 f8 g8. c,16 ~c8 c8 ~|
   c2 r2 |
@@ -190,8 +190,8 @@ lyricOneThree = \lyricmode {
 
 \score {
     <<
-    \new ChordNames { \jazzChords \harmonyOne }
-    \new Staff { \staffOne }
+    \new ChordNames { \jazzChords \transpose b f \harmonyOne }
+    \new Staff { \transpose b f \staffOne }
     \addlyrics { \lyricOneZero }
     \addlyrics { \lyricOneOne }
     \addlyrics { \lyricOneTwo }
