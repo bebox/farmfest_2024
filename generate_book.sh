@@ -9,4 +9,6 @@ MUSESCORE_PATH=./musescore
 POINT_AND_CLICK=--no-point-and-click
 #POINT_AND_CLICK=--point-and-click
 
-eval "$EXEC" $MUSESCORE_PATH/01_blagoslivljaj_boga.mscx    --ly-output $LILYPOND_PATH/01_blagoslivljaj_boga.ly    --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 1 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/sretna_sigurnost.mscx --ly-output $LILYPOND_PATH/sretna_sigurnost.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 1 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/sto_grijeh_moze_oprati.mscx --ly-output $LILYPOND_PATH/sto_grijeh_moze_oprati.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 1 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/u_kristu_cvrst_je_temelj_moj.mscx --ly-output $LILYPOND_PATH/u_kristu_cvrst_je_temelj_moj.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 1 --no-left-page $POINT_AND_CLICK --comment-tempo
