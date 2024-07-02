@@ -108,6 +108,18 @@
           <style>Title</style>
           <text>3</text>
           </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>LOBE DEN HERREN, O MEINE SEELE</text>
+          </Text>
+        <Text>
+          <style>Lyricist</style>
+          <text>  Johann D. Herrnschmidt (1714)</text>
+          </Text>
+        <Text>
+          <style>Composer</style>
+          <text> 	Johann Anastasius Freylinghausen (1704)</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -128,17 +140,17 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>begin</syllabic>
-              <text>Ve</text>
+              <text>1. Ve</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
               <syllabic>begin</syllabic>
-              <text>Sre</text>
+              <text>2. Sre</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
               <syllabic>begin</syllabic>
-              <text>Ov</text>
+              <text>3. Ov</text>
               </Lyrics>
             <Note>
               <pitch>70</pitch>

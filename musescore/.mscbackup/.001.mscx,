@@ -145,21 +145,21 @@
             <durationType>half</durationType>
             <Lyrics>
               <syllabic>begin</syllabic>
-              <text>1. Te</text>
+              <text>Te</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <text>2. Sve</text>
+              <text>Sve</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
               <syllabic>begin</syllabic>
-              <text>3. Po</text>
+              <text>Po</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
               <syllabic>begin</syllabic>
-              <text>4. Smi</text>
+              <text>Smi</text>
               </Lyrics>
             <Note>
               <pitch>67</pitch>
@@ -382,12 +382,12 @@
         </Measure>
       <Measure>
         <voice>
-          <Harmony>
-            <root>15</root>
-            </Harmony>
           <Fermata>
             <subtype>fermataAbove</subtype>
             </Fermata>
+          <Harmony>
+            <root>15</root>
+            </Harmony>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -684,12 +684,12 @@
               <tpc>19</tpc>
               </Note>
             </Chord>
-          <Harmony>
-            <root>16</root>
-            </Harmony>
           <Fermata>
             <subtype>fermataAbove</subtype>
             </Fermata>
+          <Harmony>
+            <root>16</root>
+            </Harmony>
           <Chord>
             <durationType>quarter</durationType>
             <Lyrics>
@@ -972,12 +972,12 @@
         </Measure>
       <Measure>
         <voice>
-          <Harmony>
-            <root>15</root>
-            </Harmony>
           <Fermata>
             <subtype>fermataAbove</subtype>
             </Fermata>
+          <Harmony>
+            <root>15</root>
+            </Harmony>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -1273,12 +1273,12 @@
               <tpc>19</tpc>
               </Note>
             </Chord>
-          <Harmony>
-            <root>16</root>
-            </Harmony>
           <Fermata>
             <subtype>fermataAbove</subtype>
             </Fermata>
+          <Harmony>
+            <root>16</root>
+            </Harmony>
           <Chord>
             <durationType>quarter</durationType>
             <Lyrics>
@@ -1541,13 +1541,13 @@
         </Measure>
       <Measure>
         <voice>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Harmony>
             <root>15</root>
             <base>19</base>
             </Harmony>
-          <Fermata>
-            <subtype>fermataAbove</subtype>
-            </Fermata>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
@@ -1836,12 +1836,12 @@
         </Measure>
       <Measure>
         <voice>
-          <Harmony>
-            <root>15</root>
-            </Harmony>
           <Fermata>
             <subtype>fermataAbove</subtype>
             </Fermata>
+          <Harmony>
+            <root>15</root>
+            </Harmony>
           <Chord>
             <dots>1</dots>
             <durationType>half</durationType>
