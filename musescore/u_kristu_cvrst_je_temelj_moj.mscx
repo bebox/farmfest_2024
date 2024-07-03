@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -103,6 +103,10 @@
         <Text>
           <style>Title</style>
           <text>U Kristu čvrst je temelj moj</text>
+          </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>Farmfest 2024</text>
           </Text>
         </VBox>
       <Measure len="1/4">
