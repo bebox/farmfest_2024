@@ -1,4 +1,4 @@
-\version "2.25.16"
+\version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
 aFourR = {}
