@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -128,7 +128,7 @@
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>Eliam 2024</text>
+          <text>Farmfest 2024</text>
           </Text>
         </VBox>
       <Measure len="2/8">

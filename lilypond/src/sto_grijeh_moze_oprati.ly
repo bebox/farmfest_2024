@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.25.16"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
 aFourR = {}
@@ -12,6 +12,7 @@ aFourR = {}
 
 \header {
   title = "ŠTO GRIJEH MOŽE OPRATI"
+  titlex = "Farmfest 2024"
   style = ""
   broj = "1"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -93,11 +94,11 @@ lyricOneZero = \lyricmode {
   \set stanza = "1." Što grijeh mo -- že %|
   o -- pra -- ti? %|
   Ni -- šta o -- sim kr -- vi %|
-  Kri -- sta %|
+  Kri -- sta. %|
   Što će me iz -- %|
   lije -- či -- ti? %|
   Ni -- šta o -- sim kr -- vi %|
-  Kri -- sta %|
+  Kri -- sta! %|
   O dra -- go -- %|
   cje -- na krv, %|
   ko -- ja sav %|
@@ -131,11 +132,11 @@ lyricOneOne = \lyricmode {
   \set stanza = "2." O -- prost da -- je %|
   je -- di -- no %|
   pro -- li -- ve -- na krv mog %|
-  Kri -- sta %|
+  Kri -- sta. %|
   O -- pro -- šte -- no %|
   mi je sve, %|
   o -- čiš -- ćen sam kr -- vlju %|
-  Kri -- sta. %|
+  Kri -- sta! %|
   %|
   %|
   %|
@@ -167,13 +168,13 @@ alignerOneTwo = \relative {
 
 lyricOneTwo = \lyricmode {
   \set stanza = "3." Što će me o -- %|
-  prav -- da -- ti, %|
+  prav -- da -- ti? %|
   ni -- šta o -- sim kr -- vi %|
-  Kri -- sta %|
+  Kri -- sta. %|
   Dije -- la ne -- će %|
   spa -- si -- ti, %|
   ni -- šta o -- sim kr -- vi %|
-  kri -- sta! %|
+  Kri -- sta! %|
   %|
   %|
   %|
@@ -205,11 +206,11 @@ alignerOneThree = \relative {
 
 lyricOneThree = \lyricmode {
   \set stanza = "4." I -- mam na -- du %|
-  i svoj mir, %|
+  i svoj mir %|
   je -- di -- no u kr -- vi %|
-  Kri -- sta, %|
+  Kri -- sta. %|
   O -- prav -- dan sam %|
-  pot -- pu -- no, %|
+  pot -- pu -- no %|
   pro -- li -- ve -- nom kr -- vlju %|
   Kri -- sta! %|
   %|

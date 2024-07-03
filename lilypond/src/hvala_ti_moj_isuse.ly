@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.25.16"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
 aFourR = {}
@@ -13,7 +13,7 @@ aFourR = {}
 \header {
   title = "HVALA TI, MOJ ISUSE"
   composer = "Andrea Gelemanović"
-  titlex = "Eliam 2024"
+  titlex = "Farmfest 2024"
   style = ""
   broj = "1"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }

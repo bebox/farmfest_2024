@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -102,6 +102,10 @@
         <Text>
           <style>Title</style>
           <text>Što grijeh može oprati</text>
+          </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>Farmfest 2024</text>
           </Text>
         </VBox>
       <Measure>
@@ -322,11 +326,11 @@
               <no>2</no>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>ti,</text>
+              <text>ti?</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
-              <text>mir,</text>
+              <text>mir</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -574,25 +578,25 @@
             <Lyrics>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>sta</text>
+              <text>sta.</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>sta</text>
+              <text>sta.</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>sta</text>
+              <text>sta.</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>sta,</text>
+              <text>sta.</text>
               </Lyrics>
             <Note>
               <pitch>67</pitch>
@@ -814,7 +818,7 @@
               <no>3</no>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>no,</text>
+              <text>no</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -995,7 +999,7 @@
             <Lyrics>
               <no>2</no>
               <syllabic>end</syllabic>
-              <ticks_f>0/16</ticks_f>
+              <ticks_f>0/4</ticks_f>
               <text>vi</text>
               </Lyrics>
             <Lyrics>
@@ -1033,7 +1037,7 @@
             <Lyrics>
               <no>2</no>
               <syllabic>begin</syllabic>
-              <text>kri</text>
+              <text>Kri</text>
               </Lyrics>
             <Lyrics>
               <no>3</no>
@@ -1065,12 +1069,12 @@
             <Lyrics>
               <syllabic>end</syllabic>
               <ticks_f>0/16</ticks_f>
-              <text>sta</text>
+              <text>sta!</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
-              <text>sta.</text>
+              <text>sta!</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>

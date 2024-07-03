@@ -1,8 +1,8 @@
 #!/bin/bash
 #source /home/.deck/.env/bin/activate
 
-EXEC="python3 ~/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
-LILYPOND_VERSION="2.24.3"
+EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
+LILYPOND_VERSION="2.25.16"
 LILYPOND_PATH=./lilypond/src
 #LILYPOND_PATH=./tmp
 MUSESCORE_PATH=./musescore
