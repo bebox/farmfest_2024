@@ -15,7 +15,7 @@ aFourR = {}
   titlex = "GROSSER GOTT, Katholisches Gesangbuch, Vienna, c. 1774"
   %poet = "Ignaz Franz, c. 1774"
   style = "Ignaz Franz, c. 1774"
-  broj = "1"
+  broj = "9"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

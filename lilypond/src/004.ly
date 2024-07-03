@@ -16,7 +16,7 @@ aFourR = {}
   titlex = "NUN DANKET"
   %poet = "Martin Rinkart, 1636"
   style = "Martin Rinkart, 1636"
-  broj = "1"
+  broj = "12"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

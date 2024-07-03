@@ -14,7 +14,7 @@ aFourR = {}
   title = "U KRISTU ČVRST JE TEMELJ MOJ"
   titlex = "Farmfest 2024"
   style = ""
-  broj = "1"
+  broj = "8"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
