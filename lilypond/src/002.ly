@@ -16,7 +16,7 @@ aFourR = {}
   %poet = "Joachim Neander, 1680"
   style = "Joachim Neander, 1680"
   composer = "Anonymous (1665)"
-  broj = "1"
+  broj = "10"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

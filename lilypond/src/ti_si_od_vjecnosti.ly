@@ -15,7 +15,7 @@ aFourR = {}
   composer = "Danko Tomanić"
   titlex = "Psalam 93"
   style = ""
-  broj = "1"
+  broj = "7"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

@@ -16,7 +16,7 @@ aFourR = {}
   composer = "Njemačka narodna pjesma, 1823"
   %poet = "Frohe Lieder, 1898, str. 255"
   style = "Frohe Lieder, 1898, str. 255"
-  broj = "1"
+  broj = "17"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

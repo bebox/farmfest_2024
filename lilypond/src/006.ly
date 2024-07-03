@@ -16,7 +16,7 @@ aFourR = {}
   titlex = "REVIVE US AGAIN"
   %poet = "W. P. Mackay, 1867"
   style = "W. P. Mackay, 1867"
-  broj = "1"
+  broj = "14"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
