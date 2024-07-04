@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,19 +106,19 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>3</text>
+          <text>Veličaj Gospoda</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>LOBE DEN HERREN, O MEINE SEELE</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
-          <text>  Johann D. Herrnschmidt (1714)</text>
+          <text>  J. D. Herrnschmidt, 1714</text>
           </Text>
         <Text>
           <style>Composer</style>
-          <text> 	Johann Anastasius Freylinghausen (1704)</text>
+          <text>  J. A. Freylinghausen, 1704</text>
           </Text>
         </VBox>
       <Measure>

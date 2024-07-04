@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,11 +106,11 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>8</text>
+          <text>Bud' hvaljen Bog</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>ST. PETERSBURG</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Composer</style>
@@ -1652,12 +1652,12 @@ John Dryden, 1693
         </Measure>
       <Measure len="2/4">
         <voice>
-          <Fermata>
-            <subtype>fermataAbove</subtype>
-            </Fermata>
           <Harmony>
             <root>16</root>
             </Harmony>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Chord>
             <durationType>half</durationType>
             <Lyrics>

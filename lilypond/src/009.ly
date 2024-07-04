@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourL = {}
+aFourR = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,9 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "9"
-  titlex = "WIR HATTEN GEBAUET"
-  composer = "Njemačka narodna pjesma, 1823"
+  title = "AH, TEBE ĆU SLAVIT"
+  titlex = "Duhovne pjesme"
+  composer = "Njemačka narodna, 1823"
   %poet = "Frohe Lieder, 1898, str. 255"
   style = "Frohe Lieder, 1898, str. 255"
   broj = "41"
@@ -21,7 +21,7 @@ aFourL = {}
 }
 
 \paper {
-  \aFourL
+  \aFourR
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -34,7 +34,7 @@ staffOne = \relative c' {
   \time 4/4
   \partial 4
   c4 |
-  \markMoj
+  \markMojCenter
   a'2 g4 a4 |
   f2 c4 c4 |
   c'4 b8 (a8 )b4 (c4 )|

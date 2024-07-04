@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourR = {}
+aFourL = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,9 +11,9 @@ aFourR = {}
 }
 
 \header {
-  title = "6"
+  title = "HVALA TI, BOŽE"
   composer = "John J. Husband, 1789"
-  titlex = "REVIVE US AGAIN"
+  titlex = "Duhovne pjesme"
   %poet = "W. P. Mackay, 1867"
   style = "W. P. Mackay, 1867"
   broj = "38"
@@ -21,7 +21,7 @@ aFourR = {}
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -34,7 +34,7 @@ staffOne = \relative c' {
   \time 3/4
   \partial 4
   d4 |
-  \markMoj
+  \markMojCenter
   g4 g4 g4 |
   g2 g8 a8 |
   h4 h4 h4 |
@@ -43,7 +43,7 @@ staffOne = \relative c' {
   e4 d4 h4 |
   h4 a4 a4 |
   a2 d8. d16 \bar "||" |
-  \markMoj
+  \markMojCenter
   e4 d4 h8. a16 |
   g4 g4 d'8. d16 |
   e4 d4 h4 |

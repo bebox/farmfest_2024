@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,7 +106,8 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>4</text>
+          <text>Zahval'te Bogu
+</text>
           </Text>
         <Text>
           <style>Composer</style>
@@ -114,7 +115,7 @@
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>NUN DANKET</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -165,7 +166,7 @@
             <base>18</base>
             </Harmony>
           <RehearsalMark>
-            <text>A</text>
+            <text>A?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>
@@ -844,7 +845,7 @@
             <base>19</base>
             </Harmony>
           <RehearsalMark>
-            <text>B</text>
+            <text>B?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -225,19 +225,19 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>5</text>
+          <text>Kako dobar nam je Isus</text>
           </Text>
         <Text>
           <style>Lyricist</style>
-          <text>Joseph Medlicott Scriven, 1855</text>
+          <text>J. M. Scriven, 1855</text>
           </Text>
         <Text>
           <style>Composer</style>
-          <text>Charles C. Converse, 1868</text>
+          <text>C. C. Converse, 1868</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>CONVERSE</text>
+          <text>Duhovne pjesme</text>
           </Text>
         </VBox>
       <Measure>

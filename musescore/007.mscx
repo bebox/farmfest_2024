@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,7 +106,7 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>7</text>
+          <text>Za molitve</text>
           </Text>
         <Text>
           <style>Composer</style>
@@ -114,7 +114,7 @@
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>SWEET HOUR OF PRAYER</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -158,7 +158,7 @@
             <root>16</root>
             </Harmony>
           <RehearsalMark>
-            <text>A</text>
+            <text>A?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>
@@ -708,12 +708,12 @@
               <tpc>21</tpc>
               </Note>
             </Chord>
-          <Fermata>
-            <subtype>fermataAbove</subtype>
-            </Fermata>
           <Harmony>
             <root>15</root>
             </Harmony>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Chord>
             <durationType>quarter</durationType>
             <Lyrics>
@@ -970,7 +970,7 @@
             <name></name>
             </Harmony>
           <RehearsalMark>
-            <text>B</text>
+            <text>B?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>
@@ -1508,12 +1508,12 @@
               <tpc>21</tpc>
               </Note>
             </Chord>
-          <Fermata>
-            <subtype>fermataAbove</subtype>
-            </Fermata>
           <Harmony>
             <root>15</root>
             </Harmony>
+          <Fermata>
+            <subtype>fermataAbove</subtype>
+            </Fermata>
           <Chord>
             <durationType>quarter</durationType>
             <Lyrics>

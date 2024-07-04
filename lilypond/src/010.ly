@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourR = {}
+aFourL = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,9 +11,9 @@ aFourR = {}
 }
 
 \header {
-  title = "10"
+  title = "HVAL'TE BOGA"
   composer = "Karl Friedrich Schulz, 1810"
-  titlex = "DANKET DEM HERRN"
+  titlex = "Duhovne pjesme"
   %poet = "C. F. W. Herrosee"
   style = "C. F. W. Herrosee"
   broj = "42"
@@ -21,7 +21,7 @@ aFourR = {}
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -37,7 +37,7 @@ staffOne = \relative c' {
   f'2. f4 |
   b2 c4 c4 |
   d2. d4 \bar "||" |
-  \markMoj
+  \markMojCenter
   es2 d2 |
   d2 c4 c4 |
   d4 c4 b4 a4 |

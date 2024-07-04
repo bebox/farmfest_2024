@@ -9,6 +9,7 @@ chordSharp = \markup { \hspace #0.2 \fontsize #-3 \raise #0.7 "#" }
 %min = \markup { \fontsize #-4 \raise #0.55 #(ly:export (ly:wide-char->utf-8 #x2013)) }
 %min = \markup { \fontsize #-4 \raise #0.55 \char ##x2013 }
 add = \markup { \fontsize #-4 \raise #0.8 "add" }
+M = \markup { \hspace #0.1 \fontsize #-4 \raise #0.8 "M" }
 min = \markup { \fontsize #-2 "m" }
 maj = \markup { \fontsize #-2 "maj" }
 dim = \markup { \hspace #0.06 \fontsize #-7 \raise #1.2 \char ##x00b0 }
@@ -35,6 +36,7 @@ jazzChordsMusic =
   <c f g>-\markup { \cetri }
   %septakordi
   <c e g a>-\markup { \sest }
+  <c es g h>-\markup { \min \M \sedam }
   <c es g b>-\markup { \min \sedam }
   <c es g a>-\markup { \min \sest } 
   <c es g as>-\markup { \min \chordFlat \sest }

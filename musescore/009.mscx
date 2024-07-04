@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,15 +106,15 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>9</text>
+          <text>Ah, tebe ću slavit</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>WIR HATTEN GEBAUET</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Composer</style>
-          <text>Njemačka narodna pjesma, 1823</text>
+          <text>Njemačka narodna, 1823</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -165,7 +165,7 @@
             <root>13</root>
             </Harmony>
           <RehearsalMark>
-            <text>A</text>
+            <text>A?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>half</durationType>

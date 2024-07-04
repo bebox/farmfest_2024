@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourR = {}
+aFourL = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,17 +11,17 @@ aFourR = {}
 }
 
 \header {
-  title = "2"
-  titlex = "LOBE DEN HERREN, Praxis Pietatis Melica, 1668"
+  title = "HVALI DUŠO BOGA"
+  titlex = "Duhovne pjesme"
   %poet = "Joachim Neander, 1680"
   style = "Joachim Neander, 1680"
-  composer = "Anonymous (1665)"
+  composer = "Anonymous, 1665"
   broj = "34"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -45,7 +45,7 @@ staffOne = \relative c' {
   e4 fis4 g4 |
   a2. |
   g2. \bar "||" |
-  \markMoj
+  \markMojCenter
   d'4 d4 d4 |
   e2. |
   h4 c4 d4 |

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -109,7 +109,7 @@
           </Text>
         <Text>
           <style>Composer</style>
-          <text>Andraé Crouch (1976)</text>
+          <text>Andraé Crouch, 1976</text>
           </Text>
         </VBox>
       <Measure>
@@ -134,15 +134,15 @@
           <Chord>
             <durationType>eighth</durationType>
             <Lyrics>
-              <text>Soon</text>
+              <text>1. Soon</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <text>No</text>
+              <text>2. No</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
-              <text>No</text>
+              <text>3. No</text>
               </Lyrics>
             <Note>
               <pitch>70</pitch>
@@ -495,15 +495,15 @@
           <Chord>
             <durationType>eighth</durationType>
             <Lyrics>
-              <text>Soon</text>
+              <text>soon</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <text>No</text>
+              <text>no</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
-              <text>No</text>
+              <text>no</text>
               </Lyrics>
             <Note>
               <pitch>68</pitch>
@@ -856,15 +856,15 @@
           <Chord>
             <durationType>eighth</durationType>
             <Lyrics>
-              <text>Soon</text>
+              <text>soon</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <text>No</text>
+              <text>no</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
-              <text>No</text>
+              <text>no</text>
               </Lyrics>
             <Note>
               <pitch>70</pitch>
@@ -1819,7 +1819,7 @@
           <Chord>
             <durationType>16th</durationType>
             <Lyrics>
-              <text>cross</text>
+              <text>cross,</text>
               </Lyrics>
             <Note>
               <pitch>73</pitch>
@@ -1837,7 +1837,7 @@
           <Chord>
             <durationType>16th</durationType>
             <Lyrics>
-              <text>Should</text>
+              <text>should</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -1977,8 +1977,17 @@
             <Lyrics>
               <ticks>960</ticks>
               <ticks_f>8/16</ticks_f>
-              <text>climb</text>
+              <text>climb,</text>
               </Lyrics>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/2</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <Spanner type="Tie">
                 <Tie>
@@ -2034,6 +2043,13 @@
             </Harmony>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/2</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>73</pitch>
               <tpc>9</tpc>
@@ -2182,7 +2198,7 @@
           <Chord>
             <durationType>16th</durationType>
             <Lyrics>
-              <text>need</text>
+              <text>need,</text>
               </Lyrics>
             <Note>
               <pitch>73</pitch>
@@ -2200,7 +2216,7 @@
           <Chord>
             <durationType>eighth</durationType>
             <Lyrics>
-              <text>Give</text>
+              <text>give</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -2349,8 +2365,17 @@
             <Lyrics>
               <ticks>960</ticks>
               <ticks_f>8/16</ticks_f>
-              <text>side</text>
+              <text>side.</text>
               </Lyrics>
+            <Spanner type="Slur">
+              <Slur>
+                </Slur>
+              <next>
+                <location>
+                  <fractions>1/2</fractions>
+                  </location>
+                </next>
+              </Spanner>
             <Note>
               <pitch>70</pitch>
               <tpc>12</tpc>
@@ -2377,6 +2402,13 @@
             </Harmony>
           <Chord>
             <durationType>quarter</durationType>
+            <Spanner type="Slur">
+              <prev>
+                <location>
+                  <fractions>-1/2</fractions>
+                  </location>
+                </prev>
+              </Spanner>
             <Note>
               <pitch>73</pitch>
               <tpc>9</tpc>
@@ -2409,7 +2441,7 @@
               </Volta>
             <next>
               <location>
-                <fractions>1/1</fractions>
+                <fractions>3/4</fractions>
                 </location>
               </next>
             </Spanner>
@@ -2433,7 +2465,7 @@
           <Spanner type="Volta">
             <prev>
               <location>
-                <fractions>-1/1</fractions>
+                <fractions>-3/4</fractions>
                 </location>
               </prev>
             </Spanner>
@@ -2443,12 +2475,11 @@
         <height>1</height>
         <Text>
           <style>Frame</style>
-          <text>Bridge aka C 2 kitica: (malo ga je zenska nadrobila u solu)
-
-We have come from ev'ry nation God knows each of us by name
-Jesus took His blood and washed my sins And He washed them all away
-Yes there are some of us Who have laid down our lives
-But we all shall live again on the other side
+          <text>C2:
+We have come from ev'ry nation, God knows each of us by name.
+Jesus took His blood and washed my sins, and He washed them all away.
+Yes, there are some of us who have laid down our lives,
+but we all shall live again on the other side.
 </text>
           </Text>
         </TBox>

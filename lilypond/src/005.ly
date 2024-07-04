@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourL = {}
+aFourR = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,17 +11,17 @@ aFourL = {}
 }
 
 \header {
-  title = "5"
-  %poet = "Joseph Medlicott Scriven, 1855"
-  style = "Joseph Medlicott Scriven, 1855"
-  composer = "Charles C. Converse, 1868"
-  titlex = "CONVERSE"
+  title = "KAKO DOBAR NAM JE ISUS"
+  %poet = "J. M. Scriven, 1855"
+  style = "J. M. Scriven, 1855"
+  composer = "C. C. Converse, 1868"
+  titlex = "Duhovne pjesme"
   broj = "37"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
 \paper {
-  \aFourL
+  \aFourR
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2

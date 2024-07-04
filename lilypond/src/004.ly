@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourR = {}
+aFourL = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,9 +11,9 @@ aFourR = {}
 }
 
 \header {
-  title = "4"
+  title = "ZAHVAL'TE BOGU"
   composer = "Johann Crüger, 1647"
-  titlex = "NUN DANKET"
+  titlex = "Duhovne pjesme"
   %poet = "Martin Rinkart, 1636"
   style = "Martin Rinkart, 1636"
   broj = "36"
@@ -21,7 +21,7 @@ aFourR = {}
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -34,7 +34,7 @@ staffOne = \relative c' {
   \time 4/4
   \partial 4
   c'4 |
-  \markMoj
+  \markMojCenter
   c4 c4 d4 d4 |
   c2 r4 a4 |
   b4 a4 g4 a4 |
@@ -43,7 +43,7 @@ staffOne = \relative c' {
   c2 r4 a4 |
   b4 a4 g4 a4 |
   g2 f4 g4 \bar "||" |
-  \markMoj
+  \markMojCenter
   g4 g4 a4 a4 |
   g2 r4 g4 |
   a4 c4 c4 h4 |

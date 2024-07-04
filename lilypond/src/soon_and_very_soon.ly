@@ -12,7 +12,7 @@ aFourL = {}
 
 \header {
   title = "SOON AND VERY SOON"
-  composer = "Andraé Crouch (1976)"
+  composer = "Andraé Crouch, 1976"
   style = ""
   broj = "18"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -47,11 +47,11 @@ staffOne = \relative c' {
   es'4 es8. es16 r4 des16 ces8. |
   des16 des8. des16 des8 des16 r4 ces16 b8. |
   as4 as16 b8. ces8 ces8 b16 as8. |
-  es'4 ~es16 des16 es8 des4 r4 |
+  es'4 (~es16 des16 es8 des4 )r4 |
   es4 es8 es16 es16 r4 des8 ces8 |
   des4 des8 des16 des16 r4 ces8 b8 |
   as4 as8 b16 ces16 r8 ces8 b16 as8. |
-  \set Score.repeatCommands = #'((volta "1.")) b4 ces4 des4 r4 \bar ":|." |
+  \set Score.repeatCommands = #'((volta "1.")) b4 (ces4 des4 )r4 \bar ":|." |
   \set Score.repeatCommands = #'((volta #f)) ges,2 r2 |
 }
 
@@ -101,24 +101,24 @@ alignerOneZero = \relative {
 }
 
 lyricOneZero = \lyricmode {
-  Soon and ve -- ry soon __ we are %|
+  \set stanza = "1." Soon and ve -- ry soon __ we are %|
   go -- in' to see the King, __ %|
-  Soon and ve -- ry soon __ we are %|
+  soon and ve -- ry soon __ we are %|
   go -- in' to see the King, __ %|
-  Soon and ve -- ry soon __ we are %|
+  soon and ve -- ry soon __ we are %|
   go -- in' to see the King, __ Ha -- lle -- %|
   lu -- jah, Ha -- lle -- lu -- jah, we are %|
   go -- in' to see the King! Ha -- lle -- %|
   lu -- jah, u -- %|
   jah. %|
   Should there be a -- ny %|
-  ri -- vers we must cross Should there %|
+  ri -- vers we must cross, should there %|
   be a -- ny moun -- tains we must %|
-  climb __ %|
+  climb, __ %|
   God will su -- pply all the %|
-  strength that we need Give us %|
+  strength that we need, give us %|
   grace till we reach the o -- ther %|
-  side __ %|
+  side. __ %|
   %|
 }
 
@@ -145,11 +145,11 @@ alignerOneOne = \relative {
 }
 
 lyricOneOne = \lyricmode {
-  No more cry -- in' there __ we are %|
+  \set stanza = "2." No more cry -- in' there __ we are %|
   go -- in' to see the King, __ %|
-  No more cry -- in' there __ we are %|
+  no more cry -- in' there __ we are %|
   go -- in' to see the King, __ %|
-  No more cry -- in' there __ we are %|
+  no more cry -- in' there __ we are %|
   go -- in' to see the King, __ %|
   %|
   %|
@@ -189,11 +189,11 @@ alignerOneTwo = \relative {
 }
 
 lyricOneTwo = \lyricmode {
-  No more dy -- in' there __ we are %|
+  \set stanza = "3." No more dy -- in' there __ we are %|
   go -- in' to see the King, __ %|
-  No more dy -- in' there __ we are %|
+  no more dy -- in' there __ we are %|
   go -- in' to see the King, __ %|
-  No more dy -- in' there __ we are %|
+  no more dy -- in' there __ we are %|
   go -- in' to see the King, __ %|
   %|
   %|
@@ -229,15 +229,13 @@ lyricOneTwo = \lyricmode {
 
 \markup {
   \column {
-    \vspace #1
   }
   \hspace #1
   \column {
-    \line { Bridge aka C 2 kitica: (malo ga je zenska nadrobila u solu) }
-    \vspace #1
-    \line { We have come from ev'ry nation God knows each of us by name }
-    \line { Jesus took His blood and washed my sins And He washed them all away }
-    \line { Yes there are some of us Who have laid down our lives }
-    \line { But we all shall live again on the other side }
+    \line { C2: }
+    \line { We have come from ev'ry nation, God knows each of us by name. }
+    \line { Jesus took His blood and washed my sins, and He washed them all away. }
+    \line { Yes, there are some of us who have laid down our lives, }
+    \line { but we all shall live again on the other side. }
   }
 }

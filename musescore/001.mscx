@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -114,12 +114,11 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>1</text>
+          <text>Tebe Boga hvalimo</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>GROSSER GOTT, Katholisches Gesangbuch, Vienna, c. 1774
-</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -1323,7 +1322,7 @@
             <root>16</root>
             </Harmony>
           <RehearsalMark>
-            <text>B</text>
+            <text>B?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>half</durationType>

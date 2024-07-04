@@ -1,7 +1,7 @@
 \version "2.24.3"
 \include "deutsch.ly"
 jazzChords = { \semiGermanChords }
-aFourL = {}
+aFourR = {}
 \include "include.ily"
 %markMoj = #(define-music-function (letter) (string?) #{ \mark \markup { \box \bold #letter } #})
 %\pointAndClickOff
@@ -11,8 +11,8 @@ aFourL = {}
 }
 
 \header {
-  title = "1"
-  titlex = "GROSSER GOTT, Katholisches Gesangbuch, Vienna, c. 1774"
+  title = "TEBE BOGA HVALIMO"
+  titlex = "Duhovne pjesme"
   %poet = "Ignaz Franz, c. 1774"
   style = "Ignaz Franz, c. 1774"
   broj = "33"
@@ -20,7 +20,7 @@ aFourL = {}
 }
 
 \paper {
-  \aFourL
+  \aFourR
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -48,7 +48,7 @@ staffOne = \relative c' {
   h4 (a4 )h4 |
   d4 (c4 )h4 |
   h2 a4 \bar "||" |
-  \markMoj
+  \markMojCenter
   a2 h4 |
   c4 (h4 )a4 |
   h2 c4 |

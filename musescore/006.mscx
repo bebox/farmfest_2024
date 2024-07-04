@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,7 +106,7 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>6</text>
+          <text>Hvala Ti, Bože</text>
           </Text>
         <Text>
           <style>Composer</style>
@@ -114,7 +114,7 @@
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>REVIVE US AGAIN</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -163,7 +163,7 @@
             <name></name>
             </Harmony>
           <RehearsalMark>
-            <text>A</text>
+            <text>A?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>
@@ -730,7 +730,7 @@
             <root>14</root>
             </Harmony>
           <RehearsalMark>
-            <text>B</text>
+            <text>B?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>

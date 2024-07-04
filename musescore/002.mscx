@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -106,12 +106,11 @@
         <boxAutoSize>0</boxAutoSize>
         <Text>
           <style>Title</style>
-          <text>2</text>
+          <text>Hvali dušo Boga</text>
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>LOBE DEN HERREN, Praxis Pietatis Melica, 1668
-</text>
+          <text>Duhovne pjesme</text>
           </Text>
         <Text>
           <style>Lyricist</style>
@@ -119,7 +118,7 @@
           </Text>
         <Text>
           <style>Composer</style>
-          <text>Anonymous (1665)</text>
+          <text>Anonymous, 1665</text>
           </Text>
         </VBox>
       <Measure>
@@ -1021,7 +1020,7 @@
             <root>15</root>
             </Harmony>
           <RehearsalMark>
-            <text>B</text>
+            <text>B?markMojCenter</text>
             </RehearsalMark>
           <Chord>
             <durationType>quarter</durationType>
