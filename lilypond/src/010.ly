@@ -16,7 +16,7 @@ aFourR = {}
   titlex = "DANKET DEM HERRN"
   %poet = "C. F. W. Herrosee"
   style = "C. F. W. Herrosee"
-  broj = "18"
+  broj = "42"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

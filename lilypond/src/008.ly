@@ -18,7 +18,7 @@ aFourR = {}
 John Dryden, 1693"
   style = "Rhabanus Maurus (778-856)
 John Dryden, 1693"
-  broj = "16"
+  broj = "40"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
