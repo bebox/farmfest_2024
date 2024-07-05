@@ -108,6 +108,10 @@
           <style>Subtitle</style>
           <text>Farmfest 2024</text>
           </Text>
+        <Text>
+          <style>Composer</style>
+          <text>W. B. Bradbury</text>
+          </Text>
         </VBox>
       <Measure len="1/4">
         <voice>

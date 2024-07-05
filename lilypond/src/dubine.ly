@@ -23,13 +23,13 @@ note = \relative c' {
   \time 4/4
   
   \markMoj
-  r8. a16 h8. a16 h8. a16 cis8. d16 |
+  r8. \parenthesize a16 h8. a16 h8. a16 cis8. d16 |
   d4 a4 r8. a16 d8. d16 ~ |
   d8 cis8 ~ cis4 r8. a16 cis8. d16 ~ |
   d8 h8 ~ h4 r2 \break |
-  r8. a16 h8. a16 h8. a16 cis8. d16 |
+  r8. \parenthesize a16 h8. a16 h8. a16 cis8. d16 |
   d4 a4 r8. d16 d8. e16 ~ |
-  e8 e8 ~ e4 r8 d16 d16 f16 ( e8 ) d16 ~ |
+  e8 e8 ~ e4 r8 \parenthesize d16 d16 f16 ( e8 ) d16 ~ |
   d8 h8 ~ h4 r2 |
   
   \markMoj \break
@@ -65,11 +65,11 @@ note = \relative c' {
 tekst = \lyricmode {
   \set stanza = "1."
   _ Znam da zo -- veš, 
-  al' se bo -- jim _ ho -- ću li __ po -- to -- nu ti. __ 
+  al' se bo -- jim _ ho -- ću __ li __ po -- to -- nu __ ti. __ 
   "" Ti si taj -- na ko -- joj i -- dem. 
   U vje -- ri __ ja __ "" ću ho -- da -- ti. __ 
   
-  "" I -- me Tvo -- je za -- zvat ću __ i gle -- dat' go -- re iz -- nad __ svih __ "" va -- lo -- va. 
+  "" I -- me Tvo -- je za -- zvat __ ću __ i gle -- dat' go -- re iz -- nad __ svih __ "" va -- lo -- va. 
   U Te -- bi mi -- ran o -- stat __ ću __ "" Ja sam Tvoj __ i Ti si __ moj. __ 
   
   
@@ -77,13 +77,13 @@ tekst = \lyricmode {
   gdje god zo -- veš daj da kre -- nem, 
   po mo -- ri -- ma da ho -- dam. 
   Ti me vo -- di gdje su naj -- ve -- će du -- bi -- ne, 
-  di -- ži vje -- ru u vi -- si -- ne, 
+  di -- ži vje -- ru u __ vi -- si -- ne, 
   znam da Spa -- si -- telj je ov -- dje. 
 }
 
 ref = \lyricmode {
   \set stanza = "2."
-  Du -- bi -- ne ču -- va Tvo -- ja mi -- lost i moć -- na Ti __ "" de -- sni ca. __ 
+  Du -- bi -- ne ču -- va Tvo -- ja mi -- lost i moć -- na __ Ti __ "" de -- sni __ ca. __ 
   Kad kre -- ne strah i do -- đe sla -- bost, 
   Ti o -- stat ćeš mo -- ja po -- bje -- da. __ 
 

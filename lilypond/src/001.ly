@@ -137,8 +137,8 @@ lyricOneZero = \lyricmode {
   Ti, %|
   o -- stat %|
   ćeš __ u %|
-  viječ -- nos -- %|
-  ti. %|
+  vije -- čno -- %|
+  sti. %|
 }
 
 alignerOneOne = \relative {
@@ -190,7 +190,7 @@ lyricOneOne = \lyricmode {
   Go -- spod %|
   Bog, %|
   kralj pre -- %|
-  slav -- ni %|
+  sla -- vni %|
   pu -- ka %|
   svog. %|
 }
@@ -244,7 +244,7 @@ lyricOneTwo = \lyricmode {
   sa -- slu -- %|
   šaj, %|
   i u %|
-  vječ -- ni %|
+  vje -- čni %|
   pri -- mi %|
   raj. %|
 }

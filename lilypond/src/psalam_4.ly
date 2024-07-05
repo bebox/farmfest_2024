@@ -72,7 +72,7 @@ note = \relative c' {
   g8 g8 a8 b8 ~ b8 a8 g4 |
   r4 g8 g8 g8 g8 r8 f8 |
   f8 g8 g2. |
-  r1 \bar "|." |
+  \partial2. r2. \bar "|." |
 }
 
 tekstA = \lyricmode {
@@ -112,7 +112,7 @@ akordi = \chordmode {
   d1:m | c | b | b |
   g1:m | f/a | c | c |
   b1 | c | d:m | d:m |
-  es1 | es | c | c2 \parenthesize d2 |
+  es1 | es | c | c2 \parenthesize d4 |
   
 }
 

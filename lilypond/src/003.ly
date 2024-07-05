@@ -121,7 +121,7 @@ alignerOneZero = \relative {
   c2 c4 |
   c4 r4 c4 |
   c2 c4 |
-  c4 r4 r4 |
+  c4 r4 c4 |
   c2 c4 |
   c2 c4 |
   c2 r4 |
@@ -152,9 +152,9 @@ lyricOneZero = \lyricmode {
   sla -- va %|
   sva -- ki %|
   dan. Ha -- %|
-  le -- %|
+  le -- lu -- %|
   ja, ha -- %|
-  le -- lu %|
+  le -- lu -- %|
   ja! %|
 }
 
@@ -183,7 +183,7 @@ alignerOneOne = \relative {
   c2 c4 |
   c4( c4) c4 |
   c2 c4 |
-  c4 r4 r4 |
+  c4 r4 c4 |
   c2 c4 |
   c2 c4 |
   c2 r4 |
@@ -214,9 +214,9 @@ lyricOneOne = \lyricmode {
   nać' će %|
   put __ u %|
   raj. Ha -- %|
-  le -- %|
+  le -- lu -- %|
   ja, ha -- %|
-  le -- lu %|
+  le -- lu -- %|
   ja! %|
 }
 
@@ -245,7 +245,7 @@ alignerOneTwo = \relative {
   c2 c4 |
   c4( c4) c4 |
   c2 c4 |
-  c4 r4 r4 |
+  c4 r4 c4 |
   c2 c4 |
   c2 c4 |
   c2 r4 |
@@ -276,9 +276,9 @@ lyricOneTwo = \lyricmode {
   bri -- ne %|
   za __ nas %|
   sam. Ha -- %|
-  le -- %|
+  le -- lu -- %|
   ja, ha -- %|
-  le -- lu %|
+  le -- lu -- %|
   ja! %|
 }
 

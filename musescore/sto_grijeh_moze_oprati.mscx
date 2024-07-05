@@ -107,6 +107,10 @@
           <style>Subtitle</style>
           <text>Farmfest 2024</text>
           </Text>
+        <Text>
+          <style>Composer</style>
+          <text>Robert Lowry</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>

@@ -534,6 +534,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
               <text>la</text>
               </Lyrics>
             <Lyrics>
@@ -558,7 +559,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>begin</syllabic>
-              <text>vel</text>
+              <text>vel'</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -691,7 +692,7 @@
             <Lyrics>
               <no>2</no>
               <syllabic>middle</syllabic>
-              <text>bes</text>
+              <text>be</text>
               </Lyrics>
             <Note>
               <pitch>69</pitch>
@@ -713,7 +714,7 @@
             <Lyrics>
               <no>2</no>
               <syllabic>middle</syllabic>
-              <text>ko</text>
+              <text>sko</text>
               </Lyrics>
             <Note>
               <pitch>67</pitch>
@@ -884,7 +885,7 @@
             <Lyrics>
               <no>2</no>
               <syllabic>middle</syllabic>
-              <text>dno</text>
+              <text>d'no</text>
               </Lyrics>
             <Note>
               <pitch>67</pitch>
@@ -1078,6 +1079,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
               <text>ži</text>
               </Lyrics>
             <Lyrics>
@@ -1108,7 +1110,7 @@
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <text>vijek;</text>
+              <text>'vijek;</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>

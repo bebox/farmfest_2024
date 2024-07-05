@@ -28,7 +28,7 @@ note = \relative c' {
   \once \override Score.RehearsalMark.self-alignment-X = #CENTER
   \once \override Score.RehearsalMark.Y-offset = #0.3
   \once \override Staff.BarLine.extra-spacing-width = #'(0 . 1.2)
-  \mark \default
+  \mark \default \bar "||"
   a8. f16 ~ f8 c ~ c2 |
   r2 c'8. b16 ~ b8 a ~ |
   a8 g16( f ~ f2.) |

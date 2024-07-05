@@ -13,11 +13,9 @@ aFourL = {}
 \header {
   title = "BUD' HVALJEN BOG"
   titlex = "Duhovne pjesme"
-  composer = "Dmitri Stepanovich Bortnianski, 1825"
-  %poet = "Rhabanus Maurus (778-856)
-John Dryden, 1693"
-  style = "Rhabanus Maurus (778-856)
-John Dryden, 1693"
+  composer = "D. S. Bortnianski, 1825"
+  %poet = "Rhabanus Maurus (778-856)"
+  style = "Rhabanus Maurus (778-856)"
   broj = "40"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }

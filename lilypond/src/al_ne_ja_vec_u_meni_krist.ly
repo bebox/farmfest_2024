@@ -50,7 +50,7 @@ staffOne = \relative c' {
   e4 e8 fis8 fis4 fis8 gis8 |
   gis4 e'8 dis8 cis4 h8 a8 |
   gis4 e8 fis8 fis4 r8 e8 |
-  e2 r2 |
+  \partial8*5 e2 r8 |
 }
 
 harmonyOne = \chordmode  {
@@ -70,7 +70,7 @@ harmonyOne = \chordmode  {
   e2 fis2:m |
   e2/gis a2 |
   e2/h h2 |
-  e2:sus4 e2 |
+  e2:sus4 e8 |
   \bar "|."
 }
 

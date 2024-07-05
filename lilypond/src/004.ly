@@ -102,7 +102,7 @@ lyricOneZero = \lyricmode {
   sad sr -- %|
   cem, ust' -- mi, ru -- %|
   ka -- ma, jer %|
-  dje -- la vel -- ka %|
+  dje -- la vel' -- ka %|
   rad, On %|
   či -- ni svud na %|
   na -- ma. Ko -- %|
@@ -149,7 +149,7 @@ lyricOneOne = \lyricmode {
   svo -- joj mi -- lo -- %|
   sti, nek %|
   nas On dr -- ži %|
-  vijek; prot' %|
+  'vijek; prot' %|
   sva -- koj sla -- bo -- %|
   sti, nek %|
   od Njeg' nam je %|
@@ -184,9 +184,9 @@ lyricOneTwo = \lyricmode {
   Si -- nu i %|
   Du -- hu sve -- to -- %|
   mu, na %|
-  ne -- bes -- ko -- me %|
+  ne -- be -- sko -- me %|
   tro -- nu: tro -- %|
-  je -- dno -- me Bo -- %|
+  je -- d'no -- me Bo -- %|
   gu, ko -- %|
   ji je "s po" -- če -- %|
   tka, i %|

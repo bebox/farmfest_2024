@@ -46,7 +46,7 @@ note = \relative c'{
   c4. g8 a c |
   d4 ~ d8 g,8 e'8 d16 c |
   a8 e' d4. c8 |
-  c2
+  c2 r8
   \bar "|."
 }
 
@@ -110,7 +110,7 @@ akordi = \chordmode {
   c2 f4 | c2 f4 | g2 c4/e | f4 d:m7 f/g | c2 f4/g |
   c2 f4| g2 c4/e | f4 d:m7 f/g | c2 c4/e |
   f2 c4/e | g2 c4/e | f2 a4:m7 | g2 f4/g |
-  c2 f4 | g2 c4/e | f4 d:m7 f/g | c2
+  c2 f4 | g2 c4/e | f4 d:m7 f/g | c2 c8
 }
 
 \score {

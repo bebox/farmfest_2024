@@ -278,6 +278,7 @@
             <Lyrics>
               <no>3</no>
               <syllabic>end</syllabic>
+              <ticks_f>0/8</ticks_f>
               <text>li</text>
               </Lyrics>
             <Note>
@@ -411,7 +412,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>begin</syllabic>
-              <text>moć</text>
+              <text>mo</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -442,7 +443,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>middle</syllabic>
-              <text>no</text>
+              <text>ćno</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -509,7 +510,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>begin</syllabic>
-              <text>saz</text>
+              <text>sa</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -551,7 +552,7 @@
               <no>1</no>
               <syllabic>end</syllabic>
               <ticks_f>0/4</ticks_f>
-              <text>da;</text>
+              <text>zda;</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -583,7 +584,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>begin</syllabic>
-              <text>zdra</text>
+              <text>zdrav</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -612,7 +613,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
-              <text>vlje</text>
+              <text>lje</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -915,6 +916,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
               <text>di</text>
               </Lyrics>
             <Lyrics>
@@ -950,7 +952,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>begin</syllabic>
-              <text>sva</text>
+              <text>svag</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -992,7 +994,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
-              <text>gda.</text>
+              <text>da.</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -1280,6 +1282,7 @@
             <Lyrics>
               <no>3</no>
               <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
               <text>šo</text>
               </Lyrics>
             <Note>
@@ -1309,7 +1312,7 @@
               </Lyrics>
             <Lyrics>
               <no>3</no>
-              <text>vijek</text>
+              <text>'vijek</text>
               </Lyrics>
             <Note>
               <pitch>71</pitch>
@@ -1360,7 +1363,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>begin</syllabic>
-              <text>S pjes</text>
+              <text>S pje</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -1388,7 +1391,7 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <syllabic>end</syllabic>
-              <text>mom</text>
+              <text>smom</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
@@ -1514,6 +1517,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
+              <ticks_f>0/4</ticks_f>
               <text>be</text>
               </Lyrics>
             <Lyrics>
@@ -1549,7 +1553,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>begin</syllabic>
-              <text>svag</text>
+              <text>sva</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>
@@ -1590,7 +1594,7 @@
             <Lyrics>
               <no>1</no>
               <syllabic>end</syllabic>
-              <text>da.</text>
+              <text>gda.</text>
               </Lyrics>
             <Lyrics>
               <no>2</no>

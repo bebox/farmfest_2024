@@ -1767,6 +1767,20 @@
             </Harmony>
           <Chord>
             <durationType>quarter</durationType>
+            <Lyrics>
+              <syllabic>begin</syllabic>
+              <text>lu</text>
+              </Lyrics>
+            <Lyrics>
+              <no>1</no>
+              <syllabic>begin</syllabic>
+              <text>lu</text>
+              </Lyrics>
+            <Lyrics>
+              <no>2</no>
+              <syllabic>begin</syllabic>
+              <text>lu</text>
+              </Lyrics>
             <Note>
               <pitch>70</pitch>
               <tpc>12</tpc>
@@ -1863,16 +1877,16 @@
             <durationType>quarter</durationType>
             <Lyrics>
               <no>2</no>
-              <syllabic>end</syllabic>
+              <syllabic>middle</syllabic>
               <text>lu</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
-              <syllabic>end</syllabic>
+              <syllabic>middle</syllabic>
               <text>lu</text>
               </Lyrics>
             <Lyrics>
-              <syllabic>end</syllabic>
+              <syllabic>middle</syllabic>
               <text>lu</text>
               </Lyrics>
             <Note>
@@ -1891,13 +1905,16 @@
             <durationType>half</durationType>
             <Lyrics>
               <no>2</no>
+              <syllabic>end</syllabic>
               <text>ja!</text>
               </Lyrics>
             <Lyrics>
               <no>1</no>
+              <syllabic>end</syllabic>
               <text>ja!</text>
               </Lyrics>
             <Lyrics>
+              <syllabic>end</syllabic>
               <text>ja!</text>
               </Lyrics>
             <Note>

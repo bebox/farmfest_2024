@@ -110,7 +110,7 @@ lyricOneZero = \lyricmode {
   \set stanza = "1." Hva -- li du -- %|
   šo Bo -- ga %|
   na ne -- bu %|
-  moć -- no -- ga %|
+  mo -- ćno -- ga %|
   kra -- %|
   lja. %|
   To je mo -- %|
@@ -124,7 +124,7 @@ lyricOneZero = \lyricmode {
   psal -- tir, har -- %|
   fu uz -- mi -- %|
   te. %|
-  "S pjes" -- mom pro -- %|
+  "S pje" -- smom pro -- %|
   sla -- vi -- te %|
   kra -- %|
   lja. %|
@@ -159,14 +159,14 @@ lyricOneOne = \lyricmode {
   hva -- li, jer %|
   div -- no i %|
   vje -- što te %|
-  saz -- %|
-  da; %|
-  zdra -- vlje ti %|
+  sa -- %|
+  zda; %|
+  zdrav -- lje ti %|
   da -- je i %|
   mu -- dro ru -- %|
   ko -- vo -- di %|
-  sva -- %|
-  gda. %|
+  svag -- %|
+  da. %|
   U bje -- di %|
   zloj, %|
   po -- gled na %|
@@ -174,8 +174,8 @@ lyricOneOne = \lyricmode {
   svoj, %|
   bra -- ni te %|
   od zlo -- be %|
-  svag -- %|
-  da. %|
+  sva -- %|
+  gda. %|
 }
 
 alignerOneTwo = \relative {
@@ -266,7 +266,7 @@ lyricOneThree = \lyricmode {
   Svje -- tlo jest %|
   Bog! %|
   Sje -- ćaj se %|
-  du -- šo vijek %|
+  du -- šo 'vijek %|
   tog. %|
   I -- sti -- na %|
   vje -- čna to, %|

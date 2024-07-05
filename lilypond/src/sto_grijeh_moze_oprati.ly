@@ -13,6 +13,7 @@ aFourL = {}
 \header {
   title = "ŠTO GRIJEH MOŽE OPRATI"
   titlex = "Farmfest 2024"
+  composer = "Robert Lowry"
   style = ""
   broj = "21"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
