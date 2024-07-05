@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision></programRevision>
+  <programRevision>3224f34</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -119,7 +119,6 @@
         <Text>
           <style>Lyricist</style>
           <text>Rhabanus Maurus (778-856)
-John Dryden, 1693
 </text>
           </Text>
         </VBox>
