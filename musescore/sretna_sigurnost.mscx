@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.02">
   <programVersion>3.6.2</programVersion>
-  <programRevision>3224f34</programRevision>
+  <programRevision></programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -201,6 +201,9 @@
             <root>9</root>
             <name>maj7</name>
             </Harmony>
+          <RehearsalMark>
+            <text>A?markMojCenter</text>
+            </RehearsalMark>
           <Chord>
             <dots>1</dots>
             <durationType>quarter</durationType>
@@ -1297,7 +1300,7 @@
             <name>maj7</name>
             </Harmony>
           <RehearsalMark>
-            <text>C</text>
+            <text>B</text>
             </RehearsalMark>
           <Chord>
             <dots>1</dots>
