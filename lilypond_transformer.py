@@ -34,12 +34,12 @@ def convert_harmony_to_bass_tones_only(path: str):
                 parts = line.split(" ")
                 for part_index in range(len(parts)):
                     part = parts[part_index]
-                    if f"/" in part:
+                    if r"/" in part:
                         match = re.match(f"([a-z]*)([0-9.]*).*/([a-z]*)", part)
                         if match is not None:
                             part = f"{match.groups()[2]}{match.groups()[1]}"
-                    elif f":" in part:
-                        part = part[0:part.index(f":")]
+                    elif r":" in part:
+                        part = part[0:part.index(r":")]
                     parts[part_index] = part
                 line = " ".join(parts)
         else:
@@ -56,6 +56,53 @@ def bass_tones_only(path: str):
         os.chdir(path)
         for file_path in glob.glob("*.ly"):
             convert_harmony_to_bass_tones_only(file_path)
+
+def staff_modifier(path: str, modifier: str):
+    lines = read_lines_from_file(path)
+    in_score = False
+    for line_index in range(len(lines)):
+        line = lines[line_index]
+        if in_score:
+            if line == '}\n':
+                in_score = False
+            else:
+                if "harmonyOne" in line:
+                    line = line.replace(r"\harmonyOne", fr"{modifier} \harmonyOne")
+                if "staffOne" in line:
+                    line = line.replace(r"\staffOne", fr"{modifier} \staffOne")
+        else:
+            if line == '\\score {\n':
+                in_score = True
+        lines[line_index] = line
+    write_lines_to_file(lines, path)
+
+@app.command()
+def transpose_b(path: str):
+    if is_path_file(path):
+        staff_modifier(path, r"\transpose d c")
+    else:
+        os.chdir(path)
+        for file_path in glob.glob("*.ly"):
+            staff_modifier(file_path, r"\transpose d c")
+
+@app.command()
+def transpose_eb(path: str):
+    if is_path_file(path):
+        staff_modifier(path, r"\transpose eb c")
+    else:
+        os.chdir(path)
+        for file_path in glob.glob("*.ly"):
+            staff_modifier(file_path, r"\transpose eb c")
+
+@app.command()
+def transpose_bass(path: str):
+    if is_path_file(path):
+        staff_modifier(path, r"\transpose c' c \clef bass")
+    else:
+        os.chdir(path)
+        for file_path in glob.glob("*.ly"):
+            staff_modifier(file_path, r"\transpose c' c \clef bass")
+
 
 @app.command()
 def test(path: str):
