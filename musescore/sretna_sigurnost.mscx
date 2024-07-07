@@ -106,6 +106,14 @@
           <style>Title</style>
           <text>Sretna sigurnost</text>
           </Text>
+        <Text>
+          <style>Composer</style>
+          <text>P. P. Knapp</text>
+          </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>Farmfest 2024</text>
+          </Text>
         </VBox>
       <Measure len="3/8">
         <voice>

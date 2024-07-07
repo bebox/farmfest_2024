@@ -34,7 +34,7 @@ staffOne = \relative c' {
   \time 3/4
   \partial 4
   a'4 |
-  \markMoj
+  \markMojCenter
   fis2 g4 |
   a2 d4 |
   e4 (d4 )cis4 |

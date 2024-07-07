@@ -12,6 +12,8 @@ aFourR = {}
 
 \header {
   title = "SRETNA SIGURNOST"
+  composer = "P. P. Knapp"
+  titlex = "Farmfest 2024"
   style = ""
   broj = "19"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
