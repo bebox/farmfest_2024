@@ -1,10 +1,10 @@
 #!/bin/bash
 #source /home/.deck/.env/bin/activate
 
-EXEC="python ~/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
+EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_VERSION="2.24.3"
 LILYPOND_SRC_PATH=./lilypond/src
-LILYPOND_BIN_PATH=lilypond
+LILYPOND_BIN_PATH=/home/bebox/Work/git/lilypond-2.24.3/bin/lilypond
 LILYPOND_CONFIG_PATH=./lilypond/config/
 LILYPOND_EXPORT_PATH=./lilypond/bin
 MUSESCORE_PATH=./musescore
@@ -67,7 +67,7 @@ SONG42=010
 #eval "$EXEC" $MUSESCORE_PATH/$SONG4.mscx --ly-output $LILYPOND_SRC_PATH/$SONG4.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 4 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG5.mscx --ly-output $LILYPOND_SRC_PATH/$SONG5.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 5 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG6.mscx --ly-output $LILYPOND_SRC_PATH/$SONG6.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 6 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG7.mscx --ly-output $LILYPOND_SRC_PATH/$SONG7.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 7 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG7.mscx --ly-output $LILYPOND_SRC_PATH/$SONG7.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 7 --no-left-page $POINT_AND_CLICK --no-comment-tempo
 eval "$EXEC" $MUSESCORE_PATH/$SONG8.mscx --ly-output $LILYPOND_SRC_PATH/$SONG8.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 8 --left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG9.mscx --ly-output $LILYPOND_SRC_PATH/$SONG9.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 9 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG10.mscx --ly-output $LILYPOND_SRC_PATH/$SONG10.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 10 --no-left-page $POINT_AND_CLICK --comment-tempo

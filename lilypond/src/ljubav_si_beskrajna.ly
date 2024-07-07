@@ -36,8 +36,7 @@ staffOne = \relative c' {
   es8 d8 c8 d8 r8 d8 c8 d8 |
   r8 b8 c8 d8 g,4 f4 | \break
   \repeat volta 2 {
-  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
-  \mark \default
+  \markMojPonn
   r8 d'8 d8 d8 d4 c16 b8. |
   r8 d8 d8 d8 d4 c16( b8.) |
   r8 d8 d8 d8 d4 c8( b8) |

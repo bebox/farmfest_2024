@@ -141,9 +141,6 @@
             <sigN>6</sigN>
             <sigD>8</sigD>
             </TimeSig>
-          <RehearsalMark>
-            <text>A</text>
-            </RehearsalMark>
           <Beam>
             <StemDirection>up</StemDirection>
             </Beam>
@@ -189,6 +186,9 @@
           <Harmony>
             <root>14</root>
             </Harmony>
+          <RehearsalMark>
+            <text>A?markMojCenter</text>
+            </RehearsalMark>
           <Beam>
             <StemDirection>up</StemDirection>
             </Beam>
@@ -1596,12 +1596,11 @@
             </Chord>
           </voice>
         </Measure>
-      <Measure>
+      <Measure len="4/8">
         <endRepeat>2</endRepeat>
         <voice>
           <Rest>
-            <durationType>measure</durationType>
-            <duration>3/4</duration>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>

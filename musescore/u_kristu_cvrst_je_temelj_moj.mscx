@@ -110,7 +110,7 @@
           </Text>
         <Text>
           <style>Composer</style>
-          <text>W. B. Bradbury</text>
+          <text>W. Bradbury</text>
           </Text>
         </VBox>
       <Measure len="1/4">
@@ -1531,7 +1531,7 @@
             </Chord>
           </voice>
         </Measure>
-      <Measure len="2/4">
+      <Measure>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1583,6 +1583,25 @@
               <veloType>user</veloType>
               </Note>
             </Chord>
+          <Rest>
+            <durationType>quarter</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure len="2/4">
+        <voice>
+          <Harmony>
+            <root>12</root>
+            </Harmony>
+          <Rest>
+            <durationType>half</durationType>
+            </Rest>
+          <location>
+            <fractions>-1/4</fractions>
+            </location>
+          <Harmony>
+            <root>13</root>
+            </Harmony>
           </voice>
         </Measure>
       </Staff>

@@ -31,6 +31,7 @@ staffOne = \relative c' {
   \key as \major
   \time 4/4
   \tempo 4 = 110
+  \markMoj
   as'2 as4 g4 |
   f4 es4 as2 |
   b2 c2 | \break
@@ -43,6 +44,7 @@ staffOne = \relative c' {
   es'2 c4 as4 |
   b4 des4 c2 |
   b2 as2 \bar "||" | \break
+  \markMoj
   as1 |
   as1 |
 }

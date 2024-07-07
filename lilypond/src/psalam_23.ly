@@ -41,7 +41,7 @@ staffOne = \relative c' {
   fis4 fis8 fis8 fis8 ~fis8 fis8 a,16 h16 ~|
   h16 cis8. ~cis2 r8 e8 |
   fis4. fis8 fis4. a,16 h16 ~|
-  h16 cis8. ~cis2 r4 \bar ":|." |
+  h16 cis8. ~cis4 r2 \bar ":|." |
   \set Score.repeatCommands = #'((volta #f)) \set Score.repeatCommands = #'((volta "2.")) gis'8 gis8 gis16 e8 cis16 ~cis4 r4 |
   fis4 fis8 fis8 fis8 fis8 fis8 a,16 h16 ~|
   h16 cis8. r8 cis16 cis16 cis16 h8 h16 h16 a8 cis16 ~|
@@ -65,7 +65,7 @@ harmonyOne = \chordmode  {
   d1 |
   fis1:m |
   d1 |
-  fis1:m |
+  fis2:m e2 |
   cis1:m |
   d1 |
   fis2:m e2 |
@@ -89,7 +89,7 @@ alignerOneZero = \relative {
   c4 c8 c8 c8 r8 c8 c16 c16 |
   r16 c8.( c2) r8 c8 |
   c4. c8 c4. c16 c16 |
-  r16 c8.( c2) r4 |
+  r16 c8.( c4) r2 |
   c8 c8 c16 c8 c16( c4) r4 |
   c4 c8 c8 c8 c8 c8 c16 c16 |
   r16 c8. r8 c16 c16 c16 c8 c16 c16 c8 c16( |
@@ -106,7 +106,7 @@ alignerOneZero = \relative {
 
 lyricOneZero = \lyricmode {
   Ja -- hve je pa -- stir moj: ni u %|
-  čem ne -- o -- sku -- dje -- vam. __ Na %|
+  čem ne o -- sku -- dje -- vam. __ Na %|
   po -- lja -- na -- ma ze -- le -- nim On mi %|
   da -- je od -- mo -- ra. __ Na %|
   vru -- tke me ti -- ha -- ne vo -- %|

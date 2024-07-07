@@ -86,7 +86,7 @@ iz gro -- ba moć -- no u -- sta -- de.
 Dok sto -- ji sad __ _ u po -- bije -- di,
 grijeh si -- lu u me -- _ ni iz -- gu -- bi.
 Da, On je moj, nje -- gov sam ja, __
-_ Kri --sto -- vom krv -- lju ku -- pljen sam. __
+_ Kri -- sto -- vom krv -- lju ku -- pljen sam. __
 }
 
 tekstD = \lyricmode {

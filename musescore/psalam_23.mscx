@@ -318,7 +318,6 @@ A</longName>
             <BeamMode>mid</BeamMode>
             <durationType>16th</durationType>
             <Lyrics>
-              <syllabic>begin</syllabic>
               <text>ne</text>
               </Lyrics>
             <Note>
@@ -1072,7 +1071,7 @@ A</longName>
               </Note>
             </Chord>
           <Chord>
-            <durationType>half</durationType>
+            <durationType>quarter</durationType>
             <StemDirection>up</StemDirection>
             <Note>
               <Spanner type="Tie">
@@ -1086,8 +1085,11 @@ A</longName>
               <tpc>21</tpc>
               </Note>
             </Chord>
+          <Harmony>
+            <root>18</root>
+            </Harmony>
           <Rest>
-            <durationType>quarter</durationType>
+            <durationType>half</durationType>
             </Rest>
           </voice>
         </Measure>

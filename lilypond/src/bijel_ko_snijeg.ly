@@ -12,7 +12,7 @@ markMoj = {}
 \header {
   titlex = "Farmfest 2023"
   broj = "2"
-  title = "BIJEL KO' SNIJEG"
+  title = "BIJEL KO SNIJEG"
   composer = "Jon Foreman"
   style = "Psalam 51"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: White As Snow, Fall and Winter } }
@@ -162,15 +162,15 @@ lyricOneZero = \lyricmode {
   Ti 
   me od sveg o -- 
   pe -- ri, i bit __ 
-  ću bijel ko' snijeg! 
+  ću bijel ko snijeg! 
   Ti 
   me od sveg o -- 
   pe -- ri, i bit __ 
-  ću bijel ko' snijeg! 
+  ću bijel ko snijeg! 
   Ti 
   me od sveg o -- 
   pe -- ri, i bit __ 
-  ću bijel ko' snijeg! 
+  ću bijel ko snijeg! 
   Ti 
   me od sveg o -- 
   pe -- ri. 

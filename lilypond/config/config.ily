@@ -242,7 +242,7 @@ markMojPonn = {
   \once \override Staff.BarLine.extra-spacing-width = #'(0 . 1.2)
   %\once \override Staff.BarLine #'color = #red
   %\once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
-  \bar ".|:"
+  \bar ".|:-||"
   \mark \default
 }
 

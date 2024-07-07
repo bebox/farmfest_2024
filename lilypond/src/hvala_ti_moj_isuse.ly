@@ -32,8 +32,8 @@ staffOne = \relative c' {
   \time 6/8
   \partial 4
   \clef treble
-  \markMoj
   c8 d8 |
+  \markMojCenter
   e8 f8 e8 d8 c8 h16 a16 ~|
   a4. r8 c8 d8 |
   e8 f8 e8 g8 h,8 d8 |
@@ -51,7 +51,8 @@ staffOne = \relative c' {
   g8 e16 (d16 ~d2 )|
   e8 d8 c8 e8 d8 c16 c16 ~|
   c2. |
-  r2. \bar ":|." |
+  \partial 2
+  r2 \bar ":|." |
 }
 
 harmonyOne = \chordmode  {
@@ -72,7 +73,7 @@ harmonyOne = \chordmode  {
   g2. |
   s2. |
   f2. |
-  s2. |
+  s2 |
   \bar "|."
 }
 
@@ -94,7 +95,7 @@ alignerOneZero = \relative {
   c8) c16( c16 c2) |
   c8 c8 c8 c8 c8 c16 c16( |
   c2.) |
-  r2. |
+  r2 |
 }
 
 lyricOneZero = \lyricmode {
@@ -136,7 +137,7 @@ alignerOneOne = \relative {
   c8) c16( c16 c2) |
   c8 c8 c8 c8 c8 c16 c16( |
   c2.) |
-  r2. |
+  r2 |
 }
 
 lyricOneOne = \lyricmode {

@@ -13,7 +13,7 @@ aFourL = {}
 \header {
   title = "U KRISTU ČVRST JE TEMELJ MOJ"
   titlex = "Farmfest 2024"
-  composer = "W. B. Bradbury"
+  composer = "W. Bradbury"
   style = ""
   broj = "26"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -49,8 +49,9 @@ staffOne = \relative c' {
   c8 a8 f4 f4 |
   a8 a8 g4 c,4 |
   f8 e8 f4 a4 |
+  g8 g8 f4 r4 |
   \partial 2
-  g8 g8 f4 |
+  r2 |
 }
 
 harmonyOne = \chordmode  {
@@ -68,7 +69,8 @@ harmonyOne = \chordmode  {
   f8/c s8 d2:m7 |
   g8:9 s8 g2:m7/c |
   f8 c8/e d4:m7 fis4:dim7 |
-  g8:m7 g8:m7/c f4 |
+  g8:m7 g8:m7/c f2 |
+  b4 f4 |
   \bar "|."
 }
 
@@ -87,7 +89,8 @@ alignerOneZero = \relative {
   c8 c8 c4 c4 |
   c8 c8 c4 c4 |
   c8 c8 c4 c4 |
-  c8 c8 c4 |
+  c8 c8 c4 r4 |
+  r2 |
 }
 
 lyricOneZero = \lyricmode {
@@ -106,6 +109,7 @@ lyricOneZero = \lyricmode {
   o -- slo -- ni, na %|
   pije -- sku vi -- še %|
   ne gra -- di. %|
+  %|
 }
 
 alignerOneOne = \relative {
@@ -123,7 +127,8 @@ alignerOneOne = \relative {
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
-  r8 r8 r4 |
+  r8 r8 r4 r4 |
+  r2 |
 }
 
 lyricOneOne = \lyricmode {
@@ -136,6 +141,7 @@ lyricOneOne = \lyricmode {
   va -- lo -- vi, ta %|
   stije -- na će iz -- %|
   dr -- ža -- ti. %|
+  %|
   %|
   %|
   %|
@@ -159,7 +165,8 @@ alignerOneTwo = \relative {
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
-  r8 r8 r4 |
+  r8 r8 r4 r4 |
+  r2 |
 }
 
 lyricOneTwo = \lyricmode {
@@ -172,6 +179,7 @@ lyricOneTwo = \lyricmode {
   ras -- pad -- ne, on %|
   čvr -- sta stije -- na %|
   o -- sta -- je. %|
+  %|
   %|
   %|
   %|
@@ -195,7 +203,8 @@ alignerOneThree = \relative {
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
   r8 r8 r4 r4 |
-  r8 r8 r4 |
+  r8 r8 r4 r4 |
+  r2 |
 }
 
 lyricOneThree = \lyricmode {
@@ -208,6 +217,7 @@ lyricOneThree = \lyricmode {
   sta -- jat ću, u %|
   su -- sret nje -- mu %|
   po -- ći ću. %|
+  %|
   %|
   %|
   %|
