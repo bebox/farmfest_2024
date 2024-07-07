@@ -1,15 +1,21 @@
 #!/bin/bash
 #source /home/.deck/.env/bin/activate
 
-EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
+EXEC="python ~/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_VERSION="2.24.3"
 LILYPOND_SRC_PATH=./lilypond/src
-LILYPOND_BIN_PATH=../lilypond-2.24.3/bin/lilypond
+LILYPOND_BIN_PATH=lilypond
 LILYPOND_CONFIG_PATH=./lilypond/config/
 LILYPOND_EXPORT_PATH=./lilypond/bin
 MUSESCORE_PATH=./musescore
 POINT_AND_CLICK=--no-point-and-click
 #POINT_AND_CLICK=--point-and-click
+
+LILYPOND_TRANSFORMER=""
+#LILYPOND_TRANSFORMER="python lilypond_transformer.py transpose-b lilypond/src"
+#LILYPOND_TRANSFORMER="python lilypond_transformer.py transpose-eb lilypond/src"
+#LILYPOND_TRANSFORMER="python lilypond_transformer.py transpose-bass lilypond/src"
+#LILYPOND_TRANSFORMER="python lilypond_transformer.py bass-tones-only lilypond/src"
 
 #song list
 SONG1=al_ne_ja_vec_u_meni_krist
@@ -97,6 +103,8 @@ eval "$EXEC" $MUSESCORE_PATH/$SONG39.mscx --ly-output $LILYPOND_SRC_PATH/$SONG39
 eval "$EXEC" $MUSESCORE_PATH/$SONG40.mscx --ly-output $LILYPOND_SRC_PATH/$SONG40.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 40 --left-page $POINT_AND_CLICK --comment-tempo
 eval "$EXEC" $MUSESCORE_PATH/$SONG41.mscx --ly-output $LILYPOND_SRC_PATH/$SONG41.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 41 --no-left-page $POINT_AND_CLICK --comment-tempo
 eval "$EXEC" $MUSESCORE_PATH/$SONG42.mscx --ly-output $LILYPOND_SRC_PATH/$SONG42.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 42 --left-page $POINT_AND_CLICK --comment-tempo
+
+eval "$LILYPOND_TRANSFORMER"
 
 $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG1.ly
 $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG2.ly
