@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
+from functools import partialmethod
 import os
+import glob
 import re
 import typer
 
@@ -17,8 +19,10 @@ def write_lines_to_file(lines, path):
 def get_full_path(path):
     return os.path.realpath(os.path.expanduser(path))
 
-@app.command()
-def bass_harmony(path: str):
+def is_path_file(path):
+    return os.path.isfile(get_full_path(path))
+
+def convert_harmony_to_bass_tones_only(path: str):
     lines = read_lines_from_file(path)
     in_harmony = False
     for line_index in range(len(lines)):
@@ -43,6 +47,15 @@ def bass_harmony(path: str):
                 in_harmony = True
         lines[line_index] = line
     write_lines_to_file(lines, path)
+
+@app.command()
+def bass_tones_only(path: str):
+    if is_path_file(path):
+        convert_harmony_to_bass_tones_only(path)
+    else:
+        os.chdir(path)
+        for file_path in glob.glob("*.ly"):
+            convert_harmony_to_bass_tones_only(file_path)
 
 @app.command()
 def test(path: str):
