@@ -53,11 +53,11 @@ def bass_tones_only(path: str):
     print("Bass tones only harmony")
     if is_path_file(path):
         convert_harmony_to_bass_tones_only(path)
-        append_to_header(path, "titlex", "(Sparky)")
+        append_to_header(path, "titlex", "(Sparki)")
     else:
         for file_path in glob.glob(f"{path}/*.ly"):
             convert_harmony_to_bass_tones_only(file_path)
-            append_to_header(file_path, "titlex", "(Sparky)")
+            append_to_header(file_path, "titlex", "(Sparki)")
 
 def staff_modifier(path: str, modifier: str):
     lines = read_lines_from_file(path)
