@@ -76,32 +76,57 @@ def staff_modifier(path: str, modifier: str):
         lines[line_index] = line
     write_lines_to_file(lines, path)
 
+def append_to_header(path, variable, text):
+    lines = read_lines_from_file(path)
+    in_header = False
+    for line_index in range(len(lines)):
+        line = lines[line_index]
+        if in_header:
+            if line == '}\n':
+                in_header = False
+            else:
+                if variable in line:
+                    parts = line.split(" ")
+                    parts[-1] = f"{parts[-1][:-2]} {text}{parts[-1][-2:]}"
+                    line = " ".join(parts)
+        else:
+            if line == '\\header {\n':
+                in_header = True
+        lines[line_index] = line
+    write_lines_to_file(lines, path)
+
 @app.command()
 def transpose_b(path: str):
     if is_path_file(path):
-        staff_modifier(path, r"\transpose d c")
+        staff_modifier(path, r"\transpose c d")
+        append_to_header(path, "titlex", "(Eb)")
     else:
         os.chdir(path)
         for file_path in glob.glob("*.ly"):
-            staff_modifier(file_path, r"\transpose d c")
+            staff_modifier(file_path, r"\transpose c d")
+            append_to_header(path, "titlex", "(Eb)")
 
 @app.command()
 def transpose_eb(path: str):
     if is_path_file(path):
         staff_modifier(path, r"\transpose eb c")
+        append_to_header(path, "titlex", "(Eb)")
     else:
         os.chdir(path)
         for file_path in glob.glob("*.ly"):
             staff_modifier(file_path, r"\transpose eb c")
+            append_to_header(path, "titlex", "(Eb)")
 
 @app.command()
 def transpose_bass(path: str):
     if is_path_file(path):
         staff_modifier(path, r"\transpose c' c \clef bass")
+        append_to_header(path, "titlex", "(BASS)")
     else:
         os.chdir(path)
         for file_path in glob.glob("*.ly"):
             staff_modifier(file_path, r"\transpose c' c \clef bass")
+            append_to_header(path, "titlex", "(BASS)")
 
 
 @app.command()
