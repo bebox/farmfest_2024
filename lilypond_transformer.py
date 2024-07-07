@@ -1,19 +1,51 @@
 #!/usr/bin/python
 
+import os
+import re
 import typer
 
 app = typer.Typer(pretty_exceptions_enable=False)
 
 def read_lines_from_file(path):
-    with open(path, "r") as f:
+    with open(get_full_path(path), "r") as f:
         return f.readlines()
 
 def write_lines_to_file(lines, path):
-    with open(path, "w") as f:
+    with open(get_full_path(path), "w") as f:
         f.writelines(lines)
 
+def get_full_path(path):
+    return os.path.realpath(os.path.expanduser(path))
+
 @app.command()
-def main(path: str):
+def bass_harmony(path: str):
+    lines = read_lines_from_file(path)
+    in_harmony = False
+    for line_index in range(len(lines)):
+        line = lines[line_index]
+        if in_harmony:
+            if line == '}\n':
+                in_harmony = False
+            else:
+                parts = line.split(" ")
+                for part_index in range(len(parts)):
+                    part = parts[part_index]
+                    if f"/" in part:
+                        match = re.match(f"([a-z]*)([0-9.]*).*/([a-z]*)", part)
+                        if match is not None:
+                            part = f"{match.groups()[2]}{match.groups()[1]}"
+                    elif f":" in part:
+                        part = part[0:part.index(f":")]
+                    parts[part_index] = part
+                line = " ".join(parts)
+        else:
+            if line == 'harmonyOne = \\chordmode  {\n':
+                in_harmony = True
+        lines[line_index] = line
+    write_lines_to_file(lines, path)
+
+@app.command()
+def test(path: str):
     lines = read_lines_from_file(path)
     write_lines_to_file(lines, path)
 
