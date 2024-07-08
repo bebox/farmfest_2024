@@ -110,7 +110,7 @@ def staff_modifier(path: str, from_str: str, to_str: str):
                 if from_str in line:
                     line = line.replace(from_str, to_str)
         else:
-            if '\\staffOne =' in line:
+            if 'staffOne =' in line:
                 in_staff = True
         lines[line_index] = line
     write_lines_to_file(lines, path)
