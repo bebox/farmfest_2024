@@ -16,7 +16,7 @@ aFourR = {}
   %poet = "J. D. Herrnschmidt, 1714"
   style = "J. D. Herrnschmidt, 1714"
   composer = "J. A. Freylinghausen, 1704"
-  broj = "35"
+  broj = "36"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

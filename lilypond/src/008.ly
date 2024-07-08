@@ -16,7 +16,7 @@ aFourL = {}
   composer = "D. S. Bortnianski, 1825"
   %poet = "Rhabanus Maurus (778-856)"
   style = "Rhabanus Maurus (778-856)"
-  broj = "40"
+  broj = "41"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

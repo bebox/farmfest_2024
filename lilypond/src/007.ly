@@ -16,7 +16,7 @@ aFourR = {}
   titlex = "Duhovne pjesme"
   %poet = "W. W. Walford, 1845"
   style = "W. W. Walford, 1845"
-  broj = "39"
+  broj = "40"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

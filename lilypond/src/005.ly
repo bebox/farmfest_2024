@@ -16,7 +16,7 @@ aFourR = {}
   style = "J. M. Scriven, 1855"
   composer = "C. Converse, 1868"
   titlex = "Duhovne pjesme"
-  broj = "37"
+  broj = "38"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

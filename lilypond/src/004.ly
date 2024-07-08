@@ -16,7 +16,7 @@ aFourL = {}
   titlex = "Duhovne pjesme"
   %poet = "Martin Rinkart, 1636"
   style = "Martin Rinkart, 1636"
-  broj = "36"
+  broj = "37"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 

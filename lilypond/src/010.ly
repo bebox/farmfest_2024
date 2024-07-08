@@ -16,7 +16,7 @@ aFourL = {}
   titlex = "Duhovne pjesme"
   %poet = "C. F. W. Herrosee"
   style = "C. F. W. Herrosee"
-  broj = "42"
+  broj = "43"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
