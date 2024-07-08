@@ -1223,6 +1223,9 @@
           </voice>
         </Measure>
       <Measure>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1324,7 +1327,7 @@
             <name>6</name>
             </Harmony>
           <RehearsalMark>
-            <text>B?markMojCenter</text>
+            <text>B?markMojPonn</text>
             </RehearsalMark>
           <Chord>
             <durationType>half</durationType>
