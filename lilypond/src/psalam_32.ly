@@ -3,7 +3,7 @@
 
 \header {
   title = "PSALAM 32"
-  titlex = "Farmfest 2022 (Bb)"
+  titlex = "Farmfest 2022"
   composer = "Maasej Kovačević"
   style = "Filip Horvat"
   broj = "16"
@@ -109,8 +109,8 @@ harmonyOne = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \transpose c d \transpose c d \harmonyOne }
-    \new Staff { \transpose c d \transpose c d \staffOne }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
   >>
   \layout {}

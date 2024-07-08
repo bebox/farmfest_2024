@@ -10,7 +10,7 @@ markMoj = {}
 }
 
 \header {
-  titlex = "Farmfest 2023 (Bb)"
+  titlex = "Farmfest 2023"
   broj = "29"
   composer = "The Insyderz"
   title = "U TAJNOSTI"
@@ -121,8 +121,8 @@ lyricOneOne = \lyricmode {
 
 \score {
     <<
-    \new ChordNames { \jazzChords \transpose c d \transpose c d \harmonyOne }
-    \new Staff { \transpose c d \transpose c d \staffOne }
+    \new ChordNames { \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \lyricOneZero }
     \addlyrics { \lyricOneOne }
     >>
