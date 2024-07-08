@@ -30,6 +30,7 @@ markMoj = {}
 staffOne = \relative c' {
   \time 4/4
   \tempo 4 = 112
+  \key c \major
   \partial 2
   f8 e8 d8 c8 \bar "||" |
   \markMojCenter a4. c8 g4 d'4 ~|
