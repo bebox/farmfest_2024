@@ -43,7 +43,8 @@ def convert_harmony_to_bass_tones_only(path: str):
                     parts[part_index] = part
                 line = " ".join(parts)
         else:
-            if line == 'harmonyOne = \\chordmode  {\n':
+            #if line == 'harmonyOne = \\chordmode  {\n':
+            if 'harmonyOne = ' in line:
                 in_harmony = True
         lines[line_index] = line
     write_lines_to_file(lines, path)
