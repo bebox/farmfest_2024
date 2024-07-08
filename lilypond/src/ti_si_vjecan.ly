@@ -117,10 +117,7 @@ staffOne = \relative c' {
   }
   <<
     {
-  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
-  \once \override Score.RehearsalMark.Y-offset = #4.6
-  \bar ".|:"
-  \mark \default
+  \markMojPonn
     \repeatTie d4 cis2. ~ |
     cis1 ~ |
     cis1 |
