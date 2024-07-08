@@ -10,7 +10,7 @@ markMoj = {}
 }
 
 \header {
-  titlex = "Farmfest 2023"
+  titlex = "Farmfest 2023 (Bb)"
   broj = "29"
   composer = "The Insyderz"
   title = "U TAJNOSTI"
@@ -23,7 +23,7 @@ markMoj = {}
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
-  %page-breaking = #ly:one-page-breaking
+  page-breaking = #ly:one-page-breaking
   %last-bottom-spacing.minimum-distance = #8
 }
 
@@ -49,7 +49,7 @@ staffOne = \relative c' {
   r1 \bar ":|." | \break
   \markMoj r8 fis8 fis8 cis'8 cis4 gis4 |
   r8 fis8 fis8 cis'8 cis8. h16 ~h8 ais8 |
-  r8 fis8 fis8 cis'8 cis4 gis4 |
+  r8 fis8 fis8 cis'8 cis4 gis4 | \break
   fis1 |
   r8 fis8 fis8 cis'8 cis4 gis4 |
   r8 fis8 fis8 cis'8 cis8. h16 ~h8 ais8 |
@@ -121,8 +121,8 @@ lyricOneOne = \lyricmode {
 
 \score {
     <<
-    \new ChordNames { \jazzChords \harmonyOne }
-    \new Staff { \staffOne }
+    \new ChordNames { \jazzChords \transpose c d \harmonyOne }
+    \new Staff { \transpose c d \staffOne }
     \addlyrics { \lyricOneZero }
     \addlyrics { \lyricOneOne }
     >>
