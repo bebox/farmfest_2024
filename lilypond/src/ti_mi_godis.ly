@@ -14,6 +14,7 @@
   \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
+  page-breaking = #ly:one-page-breaking
   %system-system-spacing.padding = #3.2
 }
 
