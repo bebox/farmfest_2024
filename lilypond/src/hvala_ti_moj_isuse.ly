@@ -31,6 +31,7 @@ aFourL = {}
 staffOne = \relative c' {
   \time 6/8
   \partial 4
+  \key c \major
   \clef treble
   c8 d8 |
   \markMojCenter
