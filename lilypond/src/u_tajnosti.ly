@@ -121,8 +121,8 @@ lyricOneOne = \lyricmode {
 
 \score {
     <<
-    \new ChordNames { \jazzChords \transpose c d \harmonyOne }
-    \new Staff { \transpose c d \staffOne }
+    \new ChordNames { \jazzChords \transpose c d \transpose c d \harmonyOne }
+    \new Staff { \transpose c d \transpose c d \staffOne }
     \addlyrics { \lyricOneZero }
     \addlyrics { \lyricOneOne }
     >>
