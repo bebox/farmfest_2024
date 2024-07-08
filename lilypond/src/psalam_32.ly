@@ -3,7 +3,7 @@
 
 \header {
   title = "PSALAM 32"
-  titlex = "Farmfest 2022"
+  titlex = "Farmfest 2022 (Bb)"
   composer = "Maasej Kovačević"
   style = "Filip Horvat"
   broj = "16"
@@ -25,7 +25,7 @@ staffOne = \relative c'' {
   r4 g8 g g g d d |
   g4 g8 g g g d4 |
   r4 g8 g g g d d |
-  g4 g g8 g d4 |
+  g4 g g8 g d4 | \break
   r4 c8 c g' g g g |
   g8 g g g g g h4 |
   r4 g8 g g g g g |
@@ -33,7 +33,7 @@ staffOne = \relative c'' {
   g8 g g g g4 d |
   g8 g g g g g d d |
   g8 g g g g g d d |
-  g4 g8 g g g d4 |
+  g4 g8 g g g d4 | \break
   c4 c8 c g'4 g |
   g8 g g g g g g4 |
   g8 g g g g g g h |
@@ -41,11 +41,11 @@ staffOne = \relative c'' {
   g4 g g2 |
   g4 g8 g g g d d |
   g8 g g g g g d d |
-  g8 g g g g g d4 |
+  g8 g g g g g d4 | \break
   c8 c c c g' g g g ~ |
   g8 g g g g4 r8 g |
   g8 g g g g g g h ~ |
-  h8 h4. h8 h a g |
+  h8 h4. h8 h a g | \break
   g8 g g g g g d d |
   g8 g g g g4 d8 d |
   g8 g g g g g d d |
@@ -109,8 +109,8 @@ harmonyOne = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \harmonyOne }
-    \new Staff { \staffOne }
+    \new ChordNames {  \jazzChords \transpose c d \harmonyOne }
+    \new Staff { \transpose c d \staffOne }
     \addlyrics { \tekst \ref }
   >>
   \layout {}
