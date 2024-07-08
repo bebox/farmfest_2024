@@ -112,20 +112,20 @@ akordi = \chordmode {
   d1/fis |
   g1 |
   d1/fis |
-  cis2:m7.5- fis:7/ais |
+  cis2:m7.5- fis:7/b |
   h2:m d/a |
   g1 |
   d1/fis |
   g1 |
   d1/fis |
-  cis2:m7.5- fis:7/ais
+  cis2:m7.5- fis:7/b
   \break
   
   h2:m a/cis |
   d1 |
   h2:m a/cis |
   d1 |
-  e1/g |
+  e1/gis |
   g2 g:5- |
   g2 g:5- |
   
