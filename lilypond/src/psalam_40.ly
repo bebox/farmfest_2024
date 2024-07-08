@@ -19,7 +19,7 @@
   %last-bottom-spacing.minimum-distance = #8
 }
 
-note = \relative c' {
+staffOne = \relative c' {
   \key des \major
   \time 4/4
   
@@ -97,7 +97,7 @@ tekstB = \lyricmode {
   _ Že -- lim sve o -- bja -- vit, al' pre -- vi -- še ih __ je.
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   s8
   ges2 es:m | b1:m |
@@ -113,9 +113,9 @@ akordi = \chordmode {
 \score {
   <<
     \transpose des es
-    \new ChordNames {  \jazzChords \akordi }
-    %\new Staff { \note }
-    \transpose des es { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    %\new Staff { \staffOne }
+    \transpose des es { \staffOne }
     \addlyrics { \tekstA }
     \addlyrics { \tekstB }
   >>

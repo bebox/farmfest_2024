@@ -17,7 +17,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-note = \relative c'' {
+staffOne = \relative c'' {
   \key a \major
   \time 12/8
    
@@ -63,7 +63,7 @@ You are the same, You are the One,
 I'm co -- ming back to You. __
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   a2. a2./cis |
   a2. a2./cis |
@@ -88,8 +88,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
   >>
   \layout {}

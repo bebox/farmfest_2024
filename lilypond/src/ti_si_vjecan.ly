@@ -16,7 +16,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-noteA = \relative c' {
+staffOne = \relative c' {
   \key a \major
   \time 4/4
      \repeat volta 2 {
@@ -201,7 +201,7 @@ Ti si vje _ -- čan, __ _ _ _ _ _ _ _
 "" Ti si vje -- čan! __ _ _ _ _ _ _ _ _
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   d1 | d1 |
   fis1:m | fis:m |
@@ -237,8 +237,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \noteA }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekstA \ref }
     \addlyrics { \tekstB }
   >>

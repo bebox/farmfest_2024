@@ -18,7 +18,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-note = \relative c' {
+staffOne = \relative c' {
   	\key g \major
 	\markMoj
 	g'8 g g g ~ g g fis fis ~ |
@@ -77,7 +77,7 @@ Sr -- ca nam mije -- njaj mi -- lo -- šću svo -- jom.
 I -- su -- se, o -- ba -- sjaj nas!
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
  	e1:m | c1 | g1 | d1 |
 	e1:m | c | g | d |
@@ -92,8 +92,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
   >>
   \layout {}

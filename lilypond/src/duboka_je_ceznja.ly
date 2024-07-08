@@ -17,7 +17,7 @@
   %last-bottom-spacing.minimum-distance = #9.27
 }
 
-note = \relative c'' {
+staffOne = \relative c'' {
   \key f \major
   \time 4/4
   
@@ -101,7 +101,7 @@ Go -- spo -- de, tvoj Duh se pri -- bli -- ža -- va, sna -- žan val __ će nas
 pra -- ve -- dno -- šću, o -- pro -- šte -- njem. Mo -- li -- mo __ za pro -- bu -- đe -- nje! __
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   d1:m | c2/e f | b1 | b | 
   f1 | f | c1 | c2 f4 c/e |
@@ -124,8 +124,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
     \addlyrics { \tekstDva }
   >>

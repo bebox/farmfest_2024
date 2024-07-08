@@ -18,7 +18,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-note = \relative c'{
+staffOne = \relative c'{
   \key c \major
   \time 3/4
 
@@ -102,7 +102,7 @@ Sve do tog slav -- nog po -- vrat -- ka, __
 _ dr -- ži me si -- la Kri -- sto -- va. __
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   \skip 8*3
   g2.:m7 | d:m7 | c2 f4/c |
@@ -115,8 +115,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \transpose c d \akordi }
-    \new Staff { \transpose c d \note }
+    \new ChordNames {  \jazzChords \transpose c d \harmonyOne }
+    \new Staff { \transpose c d \staffOne }
     \addlyrics { \tekst }
     \addlyrics { \tekstB }
     \addlyrics { \tekstC }

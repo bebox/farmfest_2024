@@ -19,7 +19,7 @@
   %last-bottom-spacing.minimum-distance = #13.73
 }
 
-note = \relative c' {
+staffOne = \relative c' {
   \clef treble
   \key f \major
   \time 2/2
@@ -99,7 +99,7 @@ Jer mno -- gi ka -- žu:
   _ O -- staj -- te pra -- ve -- dni i u Ja -- hvu se u -- zdaj -- te. 
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   s4
   f1 |
@@ -118,8 +118,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames { \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekstA }
         \addlyrics { \tekstB }
 

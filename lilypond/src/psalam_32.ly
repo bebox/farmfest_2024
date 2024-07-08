@@ -17,7 +17,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-note = \relative c'' {
+staffOne = \relative c'' {
   \key c \major
   \time 4/4
   
@@ -92,7 +92,7 @@ ref = \lyricmode {
   pje -- vaj -- te Go -- spo -- du svi ko -- ji sr -- ca ste is -- kre -- na! __
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
   \set chordChanges = ##t
   g1 | g1/fis | e:m | g/d |
   c1 | g/h | a:m | d |
@@ -109,8 +109,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
   >>
   \layout {}

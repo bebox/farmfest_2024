@@ -17,7 +17,7 @@
   %system-system-spacing.padding = #3.2
 }
 
-note = \relative c' {
+staffOne = \relative c' {
 %  \once \override Score.MetronomeMark.self-alignment-X = #-1.05
 %  \once \override Score.MetronomeMark.padding = #3
     %\tempo 4 = 120
@@ -101,7 +101,7 @@ Moj grijeh tre -- ba o -- prost, sve ću pro -- ba -- ti,
 na kra -- ju te pri -- če, __ si Ti.
 }
 
-akordi = \chordmode {
+harmonyOne = \chordmode {
    \set chordChanges = ##t
   e1 | e |
   h1 | h |
@@ -119,8 +119,8 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
     \addlyrics { \tekst \ref }
     \addlyrics { \tekstDva }
   >>
