@@ -111,6 +111,10 @@
           <style>Composer</style>
           <text>Andraé Crouch, 1976</text>
           </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>Farmfest 2024</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
