@@ -50,16 +50,17 @@ SONG29=u_tajnosti
 SONG30=u_tvojim_rukama
 SONG31=u_tvojim_rukama_english
 SONG32=zahvalimo_gospodu
-SONG33=001
-SONG34=002
-SONG35=003
-SONG36=004
-SONG37=005
-SONG38=006
-SONG39=007
-SONG40=008
-SONG41=009
-SONG42=010
+SONG33=znam
+SONG34=001
+SONG35=002
+SONG36=003
+SONG37=004
+SONG38=005
+SONG39=006
+SONG40=007
+SONG41=008
+SONG42=009
+SONG43=010
 
 #eval "$EXEC" $MUSESCORE_PATH/$SONG1.mscx --ly-output $LILYPOND_SRC_PATH/$SONG1.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 1 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG2.mscx --ly-output $LILYPOND_SRC_PATH/$SONG2.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 2 --no-left-page $POINT_AND_CLICK --comment-tempo
@@ -93,16 +94,17 @@ eval "$EXEC" $MUSESCORE_PATH/$SONG26.mscx --ly-output $LILYPOND_SRC_PATH/$SONG26
 #eval "$EXEC" $MUSESCORE_PATH/$SONG30.mscx --ly-output $LILYPOND_SRC_PATH/$SONG30.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 30 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG31.mscx --ly-output $LILYPOND_SRC_PATH/$SONG31.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 31 --no-left-page $POINT_AND_CLICK --comment-tempo
 #eval "$EXEC" $MUSESCORE_PATH/$SONG32.mscx --ly-output $LILYPOND_SRC_PATH/$SONG32.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 32 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG33.mscx --ly-output $LILYPOND_SRC_PATH/$SONG33.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 33 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG34.mscx --ly-output $LILYPOND_SRC_PATH/$SONG34.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 34 --left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG35.mscx --ly-output $LILYPOND_SRC_PATH/$SONG35.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 35 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG36.mscx --ly-output $LILYPOND_SRC_PATH/$SONG36.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 36 --left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG37.mscx --ly-output $LILYPOND_SRC_PATH/$SONG37.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 37 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG38.mscx --ly-output $LILYPOND_SRC_PATH/$SONG38.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 38 --left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG39.mscx --ly-output $LILYPOND_SRC_PATH/$SONG39.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 39 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG40.mscx --ly-output $LILYPOND_SRC_PATH/$SONG40.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 40 --left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG41.mscx --ly-output $LILYPOND_SRC_PATH/$SONG41.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 41 --no-left-page $POINT_AND_CLICK --comment-tempo
-eval "$EXEC" $MUSESCORE_PATH/$SONG42.mscx --ly-output $LILYPOND_SRC_PATH/$SONG42.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 42 --left-page $POINT_AND_CLICK --comment-tempo
+#eval "$EXEC" $MUSESCORE_PATH/$SONG33.mscx --ly-output $LILYPOND_SRC_PATH/$SONG33.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 33 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG34.mscx --ly-output $LILYPOND_SRC_PATH/$SONG34.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 34 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG35.mscx --ly-output $LILYPOND_SRC_PATH/$SONG35.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 35 --left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG36.mscx --ly-output $LILYPOND_SRC_PATH/$SONG36.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 36 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG37.mscx --ly-output $LILYPOND_SRC_PATH/$SONG37.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 37 --left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG38.mscx --ly-output $LILYPOND_SRC_PATH/$SONG38.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 38 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG39.mscx --ly-output $LILYPOND_SRC_PATH/$SONG39.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 39 --left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG40.mscx --ly-output $LILYPOND_SRC_PATH/$SONG40.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 40 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG41.mscx --ly-output $LILYPOND_SRC_PATH/$SONG41.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 41 --left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG42.mscx --ly-output $LILYPOND_SRC_PATH/$SONG42.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 42 --no-left-page $POINT_AND_CLICK --comment-tempo
+eval "$EXEC" $MUSESCORE_PATH/$SONG43.mscx --ly-output $LILYPOND_SRC_PATH/$SONG43.ly --lilypond-version $LILYPOND_VERSION --custom-config --ordinal-number 43 --left-page $POINT_AND_CLICK --comment-tempo
 
 eval "$LILYPOND_TRANSFORMER"
 
@@ -148,6 +150,7 @@ $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG39.ly
 $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG40.ly
 $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG41.ly
 $LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG42.ly
+$LILYPOND_BIN_PATH -I $LILYPOND_CONFIG_PATH lilypond/src/$SONG43.ly
 
 #clean folders
 mv ./*.pdf $LILYPOND_EXPORT_PATH
