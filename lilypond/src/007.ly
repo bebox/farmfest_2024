@@ -12,7 +12,7 @@ aFourR = {}
 
 \header {
   title = "ZA MOLITVE"
-  composer = "William B. Bradbury, 1861"
+  composer = "W. B. Bradbury, 1861"
   titlex = "Duhovne pjesme"
   %poet = "W. W. Walford, 1845"
   style = "W. W. Walford, 1845"

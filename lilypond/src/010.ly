@@ -12,7 +12,7 @@ aFourL = {}
 
 \header {
   title = "HVAL'TE BOGA"
-  composer = "Karl Friedrich Schulz, 1810"
+  composer = "K. F. Schulz, 1810"
   titlex = "Duhovne pjesme"
   %poet = "C. F. W. Herrosee"
   style = "C. F. W. Herrosee"

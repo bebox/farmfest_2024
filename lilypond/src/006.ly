@@ -12,7 +12,7 @@ aFourL = {}
 
 \header {
   title = "HVALA TI, BOŽE"
-  composer = "John J. Husband, 1789"
+  composer = "J. J. Husband, 1789"
   titlex = "Duhovne pjesme"
   %poet = "W. P. Mackay, 1867"
   style = "W. P. Mackay, 1867"
