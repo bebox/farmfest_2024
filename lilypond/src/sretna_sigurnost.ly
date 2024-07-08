@@ -139,9 +139,9 @@ alignerOneOne = \relative {
 lyricOneOne = \lyricmode {
   \set stanza = "2." Pot -- pu -- no %|
   pre -- dan u mi -- ru %|
-  "s njim," On lju -- bi %|
+  "s njim," On lju -- bi %|
   me -- ne, ja sre -- tan sam %|
-  "s Njim." Dok bu -- dan %|
+  "s Njim." Dok bu -- dan %|
   mo -- lim il sni -- vam %|
   snom, znam da je %|
   sre -- ća tam gdje je %|
