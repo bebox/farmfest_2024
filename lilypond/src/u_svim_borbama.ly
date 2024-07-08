@@ -15,7 +15,7 @@
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
-  page-breaking = #ly:one-page-breaking
+  %page-breaking = #ly:one-page-breaking
 }
 
 staffOne = \relative c' {
