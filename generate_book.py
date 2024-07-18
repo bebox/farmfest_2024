@@ -11,6 +11,9 @@ import shutil
 from pathlib import Path
 from typing import Optional
 
+#VERBOSE = False
+VERBOSE = True
+
 #LILYPOND_GENERATOR_EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_GENERATOR_EXEC="python ~/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_VERSION="2.24.3"
@@ -95,7 +98,7 @@ transposition_list = [
 
 class TCOL:
     # Foreground:
-    HEADER = '\033[95m'
+    MAGENTA = '\033[95m'
     BLUE = '\033[94m'
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
@@ -108,7 +111,8 @@ class TCOL:
     NC = '\x1b[0m'  # No Color
 
 def run_bash_cmd(cmd, logger=None, interaction={}, return_lines=True, return_code=False, cr_as_newline=False, remove_empty_lines=False):
-    #logger = print
+    if VERBOSE:
+        logger = print
     if logger: logger(f"CMD: {cmd}")
     master_fd, slave_fd = pty.openpty()
     line = ""
@@ -208,13 +212,13 @@ def transform_lilypond(transposition: Transposition):
     run_bash_cmd(cmd)
 
 def generate_lilypond(song: Song, transposition: Transposition):
-    print(f"generate_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{song.name}{TCOL.END}")
+    print(f"generate_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{song.name}{TCOL.END}, {TCOL.MAGENTA}transposition: {transposition.name}{TCOL.END}")
     lilypond_source_path = get_full_path(f"{transposition.source_path}/{song.name}.ly")
     if not check_if_path_exists(lilypond_source_path):
         print(f"  {TCOL.RED}no lilypond file{TCOL.END}")
         return
 
-    cmd = f"{LILYPOND_BIN_PATH} -I {LILYPOND_CONFIG_PATH} -o {transposition.bin_path} {lilypond_source_path}"
+    cmd = f"{LILYPOND_BIN_PATH} -I {get_full_path(LILYPOND_CONFIG_PATH)} -o {get_full_path(transposition.bin_path)} {lilypond_source_path}"
     run_bash_cmd(cmd)
 
 if __name__ == "__main__":
