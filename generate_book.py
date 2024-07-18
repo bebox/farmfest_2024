@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from enum import Enum
 import shutil
 from pathlib import Path
+from typing import Optional
 
 #LILYPOND_GENERATOR_EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_GENERATOR_EXEC="python ~/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
@@ -24,6 +25,13 @@ POINT_AND_CLICK="--no-point-and-click"
 class PageOrientation(Enum):
     Left = "--left-page"
     Right = "--no-left-page"
+
+@dataclass
+class Transposition:
+    name: str
+    source_path: str
+    bin_path: str
+    transformer_func: Optional[str]
 
 @dataclass
 class Song:
@@ -75,6 +83,14 @@ song_list = [
     Song("008", 41, PageOrientation.Left),
     Song("009", 42, PageOrientation.Right),
     Song("010", 43, PageOrientation.Left)
+]
+
+transposition_list = [
+    Transposition("C", "./lilypond/src", "./lilypond/bin", None),
+    Transposition("Bb", "./lilypond/src_b", "./lilypond/bin_b", "transpose-b"),
+    Transposition("Eb", "./lilypond/src_eb", "./lilypond/bin_eb", "transpose-eb"),
+    Transposition("Bass", "./lilypond/src_bass", "./lilypond/bin_bass", "transpose-bass"),
+    Transposition("BassTonesOnly", "./lilypond/src_bto", "./lilypond/bin_bto", "bass-tones-only")
 ]
 
 class TCOL:
@@ -184,6 +200,29 @@ def convert_musescore_to_lilypond(song: Song):
     cmd = f"{LILYPOND_GENERATOR_EXEC} {musescore_path} --ly-output {lilypond_path} --lilypond-version {LILYPOND_VERSION} --custom-config --ordinal-number {song.ordinal_number} {song.page_orientation.value} {POINT_AND_CLICK} --comment-tempo"
     run_bash_cmd(cmd)
 
+def transform_lilypond(transposition: Transposition):
+    if transposition.transformer_func is None:
+        return
+    print(f"transform_lilypond {TCOL.BOLD}{transposition.name}{TCOL.END}")
+    cmd = f"python lilypond_transformer.py {transposition.transformer_func} {transposition_list[0].source_path} --path-out {transposition.source_path}"
+    run_bash_cmd(cmd)
+
+def generate_lilypond(song: Song, transposition: Transposition):
+    print(f"generate_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{song.name}{TCOL.END}")
+    lilypond_source_path = get_full_path(f"{transposition.source_path}/{song.name}.ly")
+    if not check_if_path_exists(lilypond_source_path):
+        print(f"  {TCOL.RED}no lilypond file{TCOL.END}")
+        return
+
+    cmd = f"{LILYPOND_BIN_PATH} -I {LILYPOND_CONFIG_PATH} -o {transposition.bin_path} {lilypond_source_path}"
+    run_bash_cmd(cmd)
+
 if __name__ == "__main__":
     for song in song_list:
         convert_musescore_to_lilypond(song)
+    for transposition in transposition_list:
+        create_dir_if_not_found(get_full_path(transposition.source_path))
+        create_dir_if_not_found(get_full_path(transposition.bin_path))
+        transform_lilypond(transposition)
+        for song in song_list:
+            generate_lilypond(song, transposition)
