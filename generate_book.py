@@ -14,12 +14,10 @@ from typing import Optional
 #VERBOSE = False
 VERBOSE = True
 
-#LILYPOND_GENERATOR_EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
-LILYPOND_GENERATOR_EXEC="python ~/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
+LILYPOND_GENERATOR_EXEC="python ~/Work/git/duhovne_pjesme_novi_sad_1966/scripts/new/lilypond_generator.py"
 LILYPOND_VERSION="2.24.3"
 LILYPOND_SRC_PATH="./lilypond/src"
-#LILYPOND_BIN_PATH="/home/bebox/Work/git/lilypond-2.24.3/bin/lilypond"
-LILYPOND_BIN_PATH="lilypond"
+LILYPOND_BIN_PATH="/home/bebox/Work/git/lilypond-2.24.3/bin/lilypond"
 LILYPOND_CONFIG_PATH="./lilypond/config/"
 MUSESCORE_PATH="./musescore"
 POINT_AND_CLICK="--no-point-and-click"
@@ -195,7 +193,7 @@ def create_dir_if_not_found(path):
         os.makedirs(get_full_path(path))
 
 def convert_musescore_to_lilypond(song: Song):
-    print(f"convert_musescore_to_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{song.name}{TCOL.END}")
+    print(f"convert_musescore_to_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{TCOL.GREEN}{song.name}{TCOL.END}")
     musescore_path = get_full_path(f"{MUSESCORE_PATH}/{song.name}.mscx")
     lilypond_path = get_full_path(f"{LILYPOND_SRC_PATH}/{song.name}.ly")
     if not check_if_path_exists(musescore_path):
@@ -212,7 +210,7 @@ def transform_lilypond(transposition: Transposition):
     run_bash_cmd(cmd)
 
 def generate_lilypond(song: Song, transposition: Transposition):
-    print(f"generate_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{song.name}{TCOL.END}, {TCOL.MAGENTA}transposition: {transposition.name}{TCOL.END}")
+    print(f"generate_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{TCOL.GREEN}{song.name}{TCOL.END}, {TCOL.MAGENTA}transposition: {transposition.name}{TCOL.END}")
     lilypond_source_path = get_full_path(f"{transposition.source_path}/{song.name}.ly")
     if not check_if_path_exists(lilypond_source_path):
         print(f"  {TCOL.RED}no lilypond file{TCOL.END}")
