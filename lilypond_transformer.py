@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-from functools import partialmethod
 import os
 import glob
 import re
+from typing import Optional
 import typer
 
 app = typer.Typer(pretty_exceptions_enable=False)
@@ -22,8 +22,7 @@ def get_full_path(path):
 def is_path_file(path):
     return os.path.isfile(get_full_path(path))
 
-def convert_harmony_to_bass_tones_only(path: str):
-    lines = read_lines_from_file(path)
+def convert_harmony_to_bass_tones_only(lines: list):
     in_harmony = False
     for line_index in range(len(lines)):
         line = lines[line_index]
@@ -47,21 +46,9 @@ def convert_harmony_to_bass_tones_only(path: str):
             if 'harmonyOne = ' in line:
                 in_harmony = True
         lines[line_index] = line
-    write_lines_to_file(lines, path)
+    return lines
 
-@app.command()
-def bass_tones_only(path: str):
-    print("Bass tones only harmony")
-    if is_path_file(path):
-        convert_harmony_to_bass_tones_only(path)
-        append_to_header(path, "titlex", "(Sparki)")
-    else:
-        for file_path in glob.glob(f"{path}/*.ly"):
-            convert_harmony_to_bass_tones_only(file_path)
-            append_to_header(file_path, "titlex", "(Sparki)")
-
-def score_modifier(path: str, modifier: str):
-    lines = read_lines_from_file(path)
+def score_modifier(lines: list, modifier: str):
     in_score = False
     for line_index in range(len(lines)):
         line = lines[line_index]
@@ -77,10 +64,9 @@ def score_modifier(path: str, modifier: str):
             if line == '\\score {\n':
                 in_score = True
         lines[line_index] = line
-    write_lines_to_file(lines, path)
+    return lines
 
-def append_to_header(path, variable, text):
-    lines = read_lines_from_file(path)
+def append_to_header(lines: list, variable: str, text: str):
     in_header = False
     for line_index in range(len(lines)):
         line = lines[line_index]
@@ -96,10 +82,9 @@ def append_to_header(path, variable, text):
             if line == '\\header {\n':
                 in_header = True
         lines[line_index] = line
-    write_lines_to_file(lines, path)
+    return lines
 
-def staff_modifier(path: str, from_str: str, to_str: str):
-    lines = read_lines_from_file(path)
+def staff_modifier(lines: list, from_str: str, to_str: str):
     in_staff = False
     for line_index in range(len(lines)):
         line = lines[line_index]
@@ -113,48 +98,88 @@ def staff_modifier(path: str, from_str: str, to_str: str):
             if 'staffOne =' in line:
                 in_staff = True
         lines[line_index] = line
-    write_lines_to_file(lines, path)
+    return lines
 
 @app.command()
-def transpose_b(path: str):
+def bass_tones_only(path_in: str, path_out: Optional[str] = None):
+    print("Bass tones only harmony")
+    if path_out is None: path_out = path_in
+    if is_path_file(path_in):
+        lines = read_lines_from_file(path_in)
+        convert_harmony_to_bass_tones_only(lines)
+        append_to_header(lines, "titlex", "(Sparki)")
+        write_lines_to_file(lines, path_out)
+    else:
+        os.makedirs(path_out, exist_ok=True)
+        for file_path_in in glob.glob(f"{path_in}/*.ly"):
+            file_path_out = f"{path_out}/{os.path.basename(file_path_in)}"
+            lines = read_lines_from_file(file_path_in)
+            convert_harmony_to_bass_tones_only(lines)
+            append_to_header(lines, "titlex", "(Sparki)")
+            write_lines_to_file(lines, file_path_out)
+
+@app.command()
+def transpose_b(path_in: str, path_out: Optional[str] = None):
     print("Transpose to Bb")
-    if is_path_file(path):
-        score_modifier(path, r"\transpose c d")
-        append_to_header(path, "titlex", "(Bb)")
+    if path_out is None: path_out = path_in
+    if is_path_file(path_in):
+        lines = read_lines_from_file(path_in)
+        score_modifier(lines, r"\transpose b c")
+        append_to_header(lines, "titlex", "(Bb)")
+        write_lines_to_file(lines, path_out)
     else:
-        for file_path in glob.glob(f"{path}/*.ly"):
-            score_modifier(file_path, r"\transpose c d")
-            append_to_header(file_path, "titlex", "(Bb)")
+        os.makedirs(path_out, exist_ok=True)
+        for file_path_in in glob.glob(f"{path_in}/*.ly"):
+            file_path_out = f"{path_out}/{os.path.basename(file_path_in)}"
+            lines = read_lines_from_file(file_path_in)
+            score_modifier(lines, r"\transpose b c")
+            append_to_header(lines, "titlex", "(Bb)")
+            write_lines_to_file(lines, file_path_out)
 
 @app.command()
-def transpose_eb(path: str):
+def transpose_eb(path_in: str, path_out: Optional[str] = None):
     print("Transpose to Eb")
-    if is_path_file(path):
-        score_modifier(path, r"\transpose es c'")
-        append_to_header(path, "titlex", "(Eb)")
+    if path_out is None: path_out = path_in
+    if is_path_file(path_in):
+        lines = read_lines_from_file(path_in)
+        score_modifier(lines, r"\transpose es c'")
+        append_to_header(lines, "titlex", "(Eb)")
+        write_lines_to_file(lines, path_out)
     else:
-        for file_path in glob.glob(f"{path}/*.ly"):
-            score_modifier(file_path, r"\transpose es c'")
-            append_to_header(file_path, "titlex", "(Eb)")
+        os.makedirs(path_out, exist_ok=True)
+        for file_path_in in glob.glob(f"{path_in}/*.ly"):
+            file_path_out = f"{path_out}/{os.path.basename(file_path_in)}"
+            lines = read_lines_from_file(file_path_in)
+            score_modifier(lines, r"\transpose es c'")
+            append_to_header(lines, "titlex", "(Eb)")
+            write_lines_to_file(lines, file_path_out)
 
 @app.command()
-def transpose_bass(path: str):
+def transpose_bass(path_in: str, path_out: Optional[str] = None):
     print("Transpose to BASS")
-    if is_path_file(path):
-        score_modifier(path, r"\clef bass \transpose c' c")
-        append_to_header(path, "titlex", "(BASS)")
-        staff_modifier(path, r"\clef treble", r"\clef bass")
+    if path_out is None: path_out = path_in
+    if is_path_file(path_in):
+        lines = read_lines_from_file(path_in)
+        score_modifier(lines, r"\clef bass \transpose c' c")
+        append_to_header(lines, "titlex", "(BASS)")
+        staff_modifier(lines, r"\clef treble", r"\clef bass")
+        write_lines_to_file(lines, path_out)
     else:
-        for file_path in glob.glob(f"{path}/*.ly"):
-            score_modifier(file_path, r"\clef bass \transpose c' c" )
-            append_to_header(file_path, "titlex", "(BASS)")
-            staff_modifier(file_path, r"\clef treble", r"\clef bass")
+        os.makedirs(path_out, exist_ok=True)
+        for file_path_in in glob.glob(f"{path_in}/*.ly"):
+            file_path_out = f"{path_out}/{os.path.basename(file_path_in)}"
+            lines = read_lines_from_file(file_path_in)
+            score_modifier(lines, r"\clef bass \transpose c' c" )
+            append_to_header(lines, "titlex", "(BASS)")
+            staff_modifier(lines, r"\clef treble", r"\clef bass")
+            write_lines_to_file(lines, file_path_out)
 
 
 @app.command()
-def test(path: str):
-    lines = read_lines_from_file(path)
-    write_lines_to_file(lines, path)
+def test(path_in: str, path_out: Optional[str] = None):
+    if path_out is None: path_out = path_in
+    lines = read_lines_from_file(path_in)
+    write_lines_to_file(lines, path_out)
 
 if __name__ == "__main__":
     app()
