@@ -1,0 +1,83 @@
+\version "2.24.3"
+\include "../config/include.ily"
+
+\header {
+  title = "ŠTO BLIŽE TEBI"
+  titlex = "Farmfest 2021 (Sparki)"
+  composer = "Trish Morgan"
+  style = "Arr. Ruben Horvat"
+  broj = "20"
+  tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: "\"Closer to You\" by Trish Morgan, 1991 Kingsway's Thankyou Music" } }
+}
+
+\paper {
+  \aFourR
+  %min-systems-per-page = #7
+  %annotate-spacing = ##t
+  %system-system-spacing.padding = #3.2
+}
+
+staffOne = \relative c' {
+  \key e \major
+  \time 4/4
+  
+  \markMoj
+  r1 | r1 | r1 | r1 |
+  
+  \markMojPonRight \break
+  r2 h8 cis dis fis ~ |
+  fis8 e4 cis8 dis e4 fis8 ~ |
+  fis2 cis8 dis e gis ~ |
+  gis8 fis4 e4 dis8 cis h ~ |
+  h2 h8 cis dis fis ~ |
+  fis8 e4 cis8( dis8) e4 fis8 ~ |
+  fis2 cis8 dis e gis ~ |
+  gis8 fis4 h4 a4 gis8 ~ |
+  
+  \markMoj
+  gis4 r8 gis8 gis gis4 gis8 ~ |
+  gis8 h4. a4 gis8 e8 ~ |
+  e4 r8 cis8 dis e4 gis8 ~ |
+  gis8 fis4 e8( ~ e8 dis) cis h ~ |
+  h2 h8 cis dis fis ~ |
+  fis8 e4 cis8( dis) e4 fis8 ~ |
+  fis2 cis8 dis e gis ~ |
+  gis8 fis4 e4 dis4 e8 ~ |
+  e2. r4 |
+  \bar "|."
+}
+
+tekst = \lyricmode {
+Što bli -- že te -- bi, Go -- spo -- de moj, __
+bli -- že, da ču -- jem tvoj ti -- hi glas, __
+da tvo -- ju vo -- lju spo -- zna -- jem, __
+svo -- ju po -- dre -- dim pot -- pu -- no. __
+
+Na -- dah -- ni me, pro -- či -- sti me, __
+jer če -- žnja sr -- ca mo -- ga je __
+da te ži -- vo -- tom pro -- sla -- vim, __
+bu -- dem ti bli -- že, Bo -- že moj. __
+}
+
+ref = \lyricmode {
+
+}
+
+harmonyOne = \chordmode {
+   \set chordChanges = ##t
+cis1 | fis | a | e2 dis | 
+cis1 | fis | a | h1| 
+e1 | cis | fis | a2 h2 |
+e1 | e | a1 | h2 h |
+e1 | cis | fis | a2 h2 |
+e1 | 
+}
+
+\score {
+  <<
+    \new ChordNames {  \jazzChords \harmonyOne }
+    \new Staff { \staffOne }
+    \addlyrics { \tekst \ref }
+  >>
+  \layout {}
+}
